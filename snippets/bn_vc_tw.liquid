@@ -1,0 +1,21 @@
+     <div class="row-btm">
+                <!--buy now & view cart button custom  -->
+                  <div id="smTWview" class="button-vc-bn">
+                    <div class="vc_bn_newchanges">
+                      <a href="{{ routes.cart_url }}" class="button header__icon header__icon--cart link focus-inset vc_bn_tw_btnBUY" id="cart-icon-bubble-mobile">
+                      VIEW CART <img style="margin-left: 4px;width: 16px;" src="https://cdn.shopify.com/s/files/1/0629/7252/6778/files/arrow.png?v=1676036540"/>
+                    </a>
+{% comment %}
+                    <span id="vc_bn_count">{{ cart.item_count }}</span>
+                    {% endcomment %}
+                    <button onclick="handleOcc(this)" type="button" id="CartDrawer-Checkout" class="vc_bn_tw_btn vc_bn_tw_btnATC zecpe-btn cart__checkout-button button" name="checkout">
+                       <div class="lds-ring"><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div></div>
+                      <span class="occ-btn-text" style="display : flex;align-items : center;justify-content : center; column-gap : 15px;"> 
+                        <p id="bn-btn-txt-prod" style="margin : 0; ">BUY NOW ⚡</p>
+                      </span> 
+            
+                    </button>
+                    
+                  </div>
+       </div>
+            </div>

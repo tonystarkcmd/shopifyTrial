@@ -1,0 +1,75 @@
+{%- render 'cart-drawer', blocks: section.blocks -%}
+
+{% schema %}
+{
+  "name": "Cart-Drawer",
+   "max_blocks": 3,
+  "blocks": [
+     {
+       "name": "USP Block",
+       "type": "usp_block",
+       "settings": [
+          {
+            "type": "html",
+            "id": "svg",
+            "label": "SVG Code"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>USP <strong>Text<\/strong><\/p>"
+          }
+       ]
+     }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+"id": "Show_banner",
+"label": "Show Cart Banner",
+"default": false
+    },
+        {
+        "type": "image_picker",
+        "id": "cart_banner",
+        "label": "Default Cart Banner"
+      },
+      {
+        "type": "url",
+        "id": "cart_bannerURL",
+        "label": "Default Cart Banner URL"
+      },
+          {
+        "type": "image_picker",
+        "id": "cart_bannerCamp",
+        "label": "Cart Banner For PP699 Campaign"
+      },
+    {
+        "type": "url",
+        "id": "cart_bannerCampURL",
+        "label": "Cart Banner URL For PP699 Campaign"
+      },
+       {
+        "type": "image_picker",
+        "id": "cart_bannerCampCred",
+        "label": "Cart Banner For CRED Campaign"
+      },
+    {
+        "type": "url",
+        "id": "cart_bannerCampCredURL",
+        "label": "Cart Banner URL For CRED Campaign"
+      },
+    {
+        "type": "image_picker",
+        "id": "cart_bannerCampCredRewards",
+        "label": "Cart Banner For CRED Rewards 35%"
+      },
+     {
+        "type": "url",
+        "id": "cart_bannerCampCredRewardsURL",
+        "label": "Cart Banner For CRED Rewards 35% URL"
+      }
+  ]
+}
+{% endschema %}

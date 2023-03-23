@@ -1,0 +1,31 @@
+{% if product.metafields.custom.hero_image != blank %}
+<div class="hero-image_main-container page-width">
+  <div class="hero-image-heading">{{ product.metafields.custom.hero_image.value.title }}</div>
+    {% if product.metafields.custom.hero_image.value.desktop != blank %}
+      <div class="hero-image_desktop-container">
+        <img class="hero-image_desktop" loading="lazy" src="{{ product.metafields.custom.hero_image.value.desktop  }}" alt="{{ product.metafields.custom.hero_image.value.title }}">
+      </div>
+    {% endif %}
+  
+    {% if product.metafields.custom.hero_image.value.mobile != blank %}
+      <div class="hero-image_mobile-container wrapper-padded">
+       <img class="hero-image_mobile" alt="{{ product.metafields.custom.hero_image.value.mobile.alt }}" loading="lazy" src="{{ product.metafields.custom.hero_image.value.mobile }}">
+      </div>
+    {% else %}
+      <div class="hero-image_mobile-container wrapper-padded">
+       <img class="hero-image_mobile" alt="{{ product.metafields.custom.hero_image.value.desktop.alt }}" loading="lazy" src="{{ product.metafields.custom.hero_image.value.desktop}}"> 
+      </div>
+    {% endif %}
+</div>
+{% endif %}
+{% schema %}
+  {
+    "name": "Hero Image From Metafield",
+    "settings": [],
+    "presets": [
+    {
+      "name": "Hero-image-metafield"
+    }
+  ]
+  }
+{% endschema %}

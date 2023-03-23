@@ -1,0 +1,110 @@
+{% comment %}
+  Renders a cart upsell section
+    - apply flickity to 'upsell__items-container' class
+    - replace render 'product-card' with your product card snippet
+
+  Product Tags should start with : 'upsell__'
+    
+  Theme Settings Dependancy:
+    - Checkbox: settings.upsell
+    - Title: settings.cart_drawer_cart_drawer_upsell_title
+    - Default Collection: settings.cart_drawer_collection
+    
+  Usage:
+  {%- render 'cart-upsell' -%}
+{% endcomment %}
+
+<style>
+  /* enable Flickity by default */
+  .upsell__items-container:after {
+    content: 'flickity';
+    display: none; /* hide :after */
+  }
+  .upsell__wrapper .price__container{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .upsell__wrapper .price__badge-sale{
+  padding:0px;
+  }
+  
+  @media screen and ( max-width: 990px ) {
+    /* disable Flickity for large devices */
+    .upsell__items-container:after {
+      content: '';
+    }
+    .upsell__items-container {
+      display: flex;
+      overflow-x: auto;
+    }
+    
+  }
+</style>
+
+{%- if settings.cart_drawer_upsell -%}
+	<div class="upsell__wrapper">
+		{%- liquid 
+			assign upsellHandles = ''
+			assign cart_items_Handles = ''
+			for item in cart.items
+				for tag in item.product.tags
+					if tag contains 'upsell__'
+						assign productHandle = tag | split: 'upsell__' | last
+						assign upsellHandles = upsellHandles | append : productHandle | append: ','
+					endif
+				endfor
+				assign cart_items_Handles = cart_items_Handles | append : ',' | append : item.product.handle
+			endfor
+			assign cart_items_Handles = cart_items_Handles | remove_first: ',' | split : ','
+			assign upsellHandlesArray = upsellHandles | split : ',' | uniq 
+		-%}
+		
+		{%- if settings.cart_drawer_upsell_title != blank and upsellHandlesArray.size > 0 or settings.upsell_collection != blank -%}
+			<div class="upsell__heading">
+				<h3>{{ settings.cart_drawer_upsell_title }}</h3>
+			</div>
+		{%- endif -%}
+
+		{%- liquid 
+			assign totalSkips = 0
+			for handle in upsellHandlesArray
+				if handle != blank
+					if cart_items_Handles contains handle
+						assign totalSkips = totalSkips | plus: 1
+					endif
+				endif
+			endfor
+		-%}
+  
+		{%- if upsellHandlesArray.size > totalSkips and upsellHandlesArray.size > 0 -%}
+		<flickity-carousel class="upsell__items-container"  data-flickity-options='{"cellAlign": "left","contain": true,"pageDots": false,"prevNextButtons": true, "watchCSS":true}'>
+          {%- for handle in upsellHandlesArray -%}
+              {%- if handle != blank -%}
+                  {%- if cart_items_Handles contains handle -%}
+                      {%- continue -%}
+                  {%- endif -%}
+
+                  {%- assign product = all_products[handle] -%}
+                  {%- if product.available and product.url != blank %}
+                    <div class="upsell__card">
+                      {%- render 'card-product', card_product: product, show_quick_add: true, class: 'upsell' -%}
+                    </div>
+                  {%- endif -%}
+              {%- endif -%}
+          {%- endfor  -%}
+		</flickity-carousel>
+		
+		{%- elsif settings.upsell_collection -%}
+			<flickity-carousel class="upsell__items-container">
+				{%- for product in settings.upsell_collection.products limit : settings.upsell_limit -%}
+                    {%- if product.available and product.url != blank -%}
+                      <div class="upsell__card">
+                        {%- render 'card-product', card_product: product, show_quick_add: true, class: 'upsell' -%}
+                      </div>
+                    {%- endif -%}
+                {%- endfor -%}
+			</flickity-carousel>
+		{%- endif -%}
+	</div>
+{%- endif -%}

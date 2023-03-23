@@ -1,0 +1,87 @@
+<script>
+let zecpeEvents = ["checkout_initiated_zecpe"];
+zecpeEvents.forEach((eventName) => {
+    window.addEventListener(eventName, (e) => {
+        let closeDrawer = document.querySelector(".drawer__close");
+        if (closeDrawer) {
+            closeDrawer.click();
+        }
+        try {
+          console.log("Loaded Zecpe");
+          document.querySelector("#occ-otp-heading").style = "font-size: 16px !important";
+          document.querySelector("#occ-otp-heading").innerHTML = "Login to get 🎁 <span style='color: green;'><b>free gift</b></span> on prepaid orders!";
+        } catch (ignErr) {
+          console.log(ignErr);
+        }
+    })
+})
+
+function getMoePayload(checkoutPayload) {
+  const moeUTM = JSON.parse(localStorage.getItem("occ-utm"));
+  let moe_payload = {
+    "Total Price": checkoutPayload.cartDetails.total_price,
+    "Total Items": checkoutPayload.cartDetails.items.length,
+    "currency": checkoutPayload.cartDetails.currency,
+    "URL": window.location.href,
+    "Product IDs": [],
+    "Variation IDs": [],
+    "Product Quantities": [],
+    "Product Prices": [],
+    "Product Titles": [],
+    "Variation Titles": [],    
+    "Image URLs": [],
+    "Vendor Names": [],
+    "UTM Source": moeUTM?.source,
+    "UTM Medium": moeUTM?.medium,
+    "UTM Campaign": moeUTM?.campaign,
+    "Source": checkoutPayload.tag
+  }
+  checkoutPayload.cartDetails.items.forEach((item) => {
+    moe_payload["Product IDs"].push(item.product_id);
+    moe_payload["Variation IDs"].push(item.variant_id);
+    moe_payload["Product Quantities"].push(item.quantity);
+    moe_payload["Product Prices"].push(item.price);
+    moe_payload["Product Titles"].push(item.title);
+    moe_payload["Variation Titles"].push(item.variant_title);
+    moe_payload["Image URLs"].push(item.image_url);
+    moe_payload["Vendor Names"].push(item.vendor);
+  });
+  return moe_payload
+}
+  
+window.addEventListener("checkout_initiated_zecpe", (e)=>{
+  console.log(`Zecpe event occured :: checkout_initiated_zecpe :: Detail :: `, e.detail);
+  let moe_payload = getMoePayload(e.detail);
+  // console.log("moe_payload", moe_payload);
+  Moengage.track_event("Checkout Started", moe_payload);
+})
+window.addEventListener("user_verified_zecpe", (e)=>{
+  console.log(`Zecpe event occured :: user_verified_zecpe :: Detail :: `, e.detail);
+  let moe_payload = getMoePayload(e.detail);
+  // console.log("moe_payload", moe_payload);
+  Moengage.add_mobile(e.detail.mobileNumber);
+  Moengage.add_unique_user_id(e.detail.mobileNumber);
+  Moengage.track_event("Login", moe_payload);
+})
+window.addEventListener("address_added_zecpe", (e)=>{
+  console.log(`Zecpe event occured :: address_added_zecpe :: Detail :: `, e.detail);
+  let moe_payload = getMoePayload(e.detail);
+  // console.log("moe_payload", moe_payload);
+  if (e.detail.email) {
+    Moengage.add_email(e.detail.email);
+  }
+  if (e.detail.firstName) {
+    Moengage.add_first_name(e.detail.firstName);
+  }
+  if (e.detail.lastName) {
+    Moengage.add_last_name(e.detail.lastName);
+  }              
+  Moengage.track_event("Add Address", moe_payload);
+})
+window.addEventListener("purchase_zecpe", (e)=>{
+  console.log(`Zecpe event occured :: address_added_zecpe :: Detail :: `, e.detail);
+  let moe_payload = getMoePayload(e.detail);
+  // console.log("moe_payload", moe_payload);
+  Moengage.track_event("Purchase", moe_payload);
+})
+</script>

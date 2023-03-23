@@ -1,0 +1,348 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Desktop_afb1e263-3d8e-4c21-aab4-0caebb62bd1a.jpg"
+      }
+    },
+    "65b56a66-27c9-4f20-bef2-e45184245790": {
+      "type": "sub-collections",
+      "disabled": true,
+      "blocks": {
+        "7193a514-372a-4402-a03b-4d4eb5dfa9f1": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gourment_gifts.png",
+            "text": "Gourmet Gifts",
+            "button_link": "shopify:\/\/collections\/gourmet-gifts"
+          }
+        },
+        "0b00d90f-79bd-42c8-a862-c037ae7a1011": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Value_combos_5475aac9-7ebb-4a30-b05f-b3bd04b08423.png",
+            "text": "Value Combos",
+            "button_link": "shopify:\/\/collections\/value-combos"
+          }
+        },
+        "3c7f48ba-9a55-4e18-87da-71c3a97599b2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_launches_d75b9a84-691a-46db-81ac-2e84e2a536f5.png",
+            "text": "New Launches",
+            "button_link": "shopify:\/\/collections\/new-launches-1"
+          }
+        },
+        "564cdc58-c399-41bf-9bd3-6416edd8a3b2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Diet_Nutrition2_fbc04091-7626-43af-9ec3-4ac906c12063.jpg",
+            "text": "Diet & Nutrition",
+            "button_link": "shopify:\/\/collections\/weight-management"
+          }
+        },
+        "484f0caf-c471-4a42-b197-da8b982f7fd2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dry_Fruits_Nuts_2_8ed5eff0-ce4c-4ece-b86a-63f78151ec28.png",
+            "text": "Dry Fruits & Nuts",
+            "button_link": "shopify:\/\/collections\/dry-fruits-nuts"
+          }
+        },
+        "09a12a68-298d-47c9-82ad-ac6a9a6e78d2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oil_atta_more_b4c73efa-e9eb-43fe-8e75-aaf6a0e8014f.png",
+            "text": "Oil, Ghee & more",
+            "button_link": "shopify:\/\/collections\/oil-atta-more"
+          }
+        },
+        "cca16658-0a72-46f9-b6c6-b0d8357610d2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tea_and_coffee_4f74f095-0148-4eb1-82d2-926812d47d0c.png",
+            "text": "Tea & Coffee",
+            "button_link": "shopify:\/\/collections\/tea-coffee"
+          }
+        },
+        "d87529d8-3b3c-43c1-9413-c502c658d272": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Biscuits_and_cookies_c9d585a7-d52c-437e-ba93-173d55dad185.png",
+            "text": "Biscuits & Cookies",
+            "button_link": "shopify:\/\/collections\/biscuits-cookies"
+          }
+        },
+        "148d59ec-5bec-4e6a-8baf-599802533872": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chocolates_and_mithai_055adca7-d352-45a5-876c-b882af7a2b3c.png",
+            "text": "Chocolates & Mithai",
+            "button_link": "shopify:\/\/collections\/chocolates-mithai"
+          }
+        },
+        "99b3b45d-68e3-44b3-a59f-506885010042": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chips_Snacks_2_64x64_1e94c809-01ba-409b-a3ae-b321784c67eb.jpg",
+            "text": "Chips & Snacks",
+            "button_link": "shopify:\/\/collections\/chips-snacks"
+          }
+        },
+        "15bea36d-7ccb-472c-9d71-601626b683f2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Namkeen_64x64_8bacb9e1-4d05-49a3-bab5-74da60a77c6f.png",
+            "text": "Namkeen",
+            "button_link": "shopify:\/\/collections\/namkeen"
+          }
+        },
+        "ba294cb6-3aad-445c-be17-e21fbef92692": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cereal.png",
+            "text": "Cereals & Muesli",
+            "button_link": "shopify:\/\/collections\/cereals-muesli"
+          }
+        },
+        "f087325d-0949-4a34-ab30-a26e0c769ff2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jams_and_spreads.png",
+            "text": "Jams & Spreads",
+            "button_link": "shopify:\/\/collections\/jams-spreads"
+          }
+        },
+        "7e8a76f3-3e86-49ca-9d06-fb95a09c7a52": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Juices_1.png",
+            "text": "Juices & Drinks",
+            "button_link": "shopify:\/\/collections\/juices-drinks"
+          }
+        },
+        "a579a74f-b6de-4b9b-aa1a-33dda2686502": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ready_to_cook_c9a8acdd-c059-43bf-a88d-ab89f8250959.png",
+            "text": "Ready to Cook",
+            "button_link": "shopify:\/\/collections\/instant-foods"
+          }
+        },
+        "7884ed4e-def6-4551-8918-ae209decb43e": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dips_and_sauces_6d92b1e4-1b48-4266-a3d3-4f1aa4c97fae.png",
+            "text": "Dips & Sauces",
+            "button_link": "shopify:\/\/collections\/dips-sauces-1"
+          }
+        }
+      },
+      "block_order": [
+        "7193a514-372a-4402-a03b-4d4eb5dfa9f1",
+        "0b00d90f-79bd-42c8-a862-c037ae7a1011",
+        "3c7f48ba-9a55-4e18-87da-71c3a97599b2",
+        "564cdc58-c399-41bf-9bd3-6416edd8a3b2",
+        "484f0caf-c471-4a42-b197-da8b982f7fd2",
+        "09a12a68-298d-47c9-82ad-ac6a9a6e78d2",
+        "cca16658-0a72-46f9-b6c6-b0d8357610d2",
+        "d87529d8-3b3c-43c1-9413-c502c658d272",
+        "148d59ec-5bec-4e6a-8baf-599802533872",
+        "99b3b45d-68e3-44b3-a59f-506885010042",
+        "15bea36d-7ccb-472c-9d71-601626b683f2",
+        "ba294cb6-3aad-445c-be17-e21fbef92692",
+        "f087325d-0949-4a34-ab30-a26e0c769ff2",
+        "7e8a76f3-3e86-49ca-9d06-fb95a09c7a52",
+        "a579a74f-b6de-4b9b-aa1a-33dda2686502",
+        "7884ed4e-def6-4551-8918-ae209decb43e"
+      ],
+      "settings": {
+        "background-color": "#f28484",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f33871ab-d632-49f6-83c9-6c5d2b0e78a7": {
+      "type": "mm-collection-product-page",
+      "disabled": true,
+      "blocks": {
+        "7193a514-372a-4402-a03b-4d4eb5dfa9fd": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gourment_gifts.png",
+            "text": "Gourmet Gifts",
+            "button_link": "shopify:\/\/collections\/gourmet-gifts"
+          }
+        },
+        "0b00d90f-79bd-42c8-a862-c037ae7a1019": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Value_combos_5475aac9-7ebb-4a30-b05f-b3bd04b08423.png",
+            "text": "Value Combos",
+            "button_link": "shopify:\/\/collections\/value-combos"
+          }
+        },
+        "3c7f48ba-9a55-4e18-87da-71c3a97599b1": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_launches_d75b9a84-691a-46db-81ac-2e84e2a536f5.png",
+            "text": "New Launches",
+            "button_link": "shopify:\/\/collections\/new-launches-1"
+          }
+        },
+        "564cdc58-c399-41bf-9bd3-6416edd8a3b4": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Diet_Nutrition2_fbc04091-7626-43af-9ec3-4ac906c12063.jpg",
+            "text": "Diet & Nutrition",
+            "button_link": "shopify:\/\/collections\/weight-management"
+          }
+        },
+        "484f0caf-c471-4a42-b197-da8b982f7fde": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dry_Fruits_Nuts_2_8ed5eff0-ce4c-4ece-b86a-63f78151ec28.png",
+            "text": "Dry Fruits & Nuts",
+            "button_link": "shopify:\/\/collections\/dry-fruits-nuts"
+          }
+        },
+        "09a12a68-298d-47c9-82ad-ac6a9a6e78df": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oil_atta_more_b4c73efa-e9eb-43fe-8e75-aaf6a0e8014f.png",
+            "text": "Oil, Ghee & more",
+            "button_link": "shopify:\/\/collections\/oil-atta-more"
+          }
+        },
+        "cca16658-0a72-46f9-b6c6-b0d8357610d9": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tea_and_coffee_4f74f095-0148-4eb1-82d2-926812d47d0c.png",
+            "text": "Tea & Coffee",
+            "button_link": "shopify:\/\/collections\/tea-coffee"
+          }
+        },
+        "d87529d8-3b3c-43c1-9413-c502c658d27c": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Biscuits_and_cookies_c9d585a7-d52c-437e-ba93-173d55dad185.png",
+            "text": "Biscuits & Cookies",
+            "button_link": "shopify:\/\/collections\/biscuits-cookies"
+          }
+        },
+        "99b3b45d-68e3-44b3-a59f-50688501004d": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chocolates_and_mithai_055adca7-d352-45a5-876c-b882af7a2b3c.png",
+            "text": "Chocolates & Mithai",
+            "button_link": "shopify:\/\/collections\/chocolates-mithai"
+          }
+        },
+        "15bea36d-7ccb-472c-9d71-601626b683f0": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chips_Snacks_2_64x64_1e94c809-01ba-409b-a3ae-b321784c67eb.jpg",
+            "text": "Chips & Snacks",
+            "button_link": "shopify:\/\/collections\/chips-snacks"
+          }
+        },
+        "f087325d-0949-4a34-ab30-a26e0c769ffa": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Namkeen_64x64_8bacb9e1-4d05-49a3-bab5-74da60a77c6f.png",
+            "text": "Namkeen",
+            "button_link": "shopify:\/\/collections\/namkeen"
+          }
+        },
+        "7e8a76f3-3e86-49ca-9d06-fb95a09c7a58": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cereal.png",
+            "text": "Cereals & Muesli",
+            "button_link": "shopify:\/\/collections\/cereals-muesli"
+          }
+        },
+        "a579a74f-b6de-4b9b-aa1a-33dda2686507": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jams_and_spreads.png",
+            "text": "Jams & Spreads",
+            "button_link": "shopify:\/\/collections\/jams-spreads"
+          }
+        },
+        "652b5c89-be77-4a99-a503-56fa64fb64bb": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Juices_and_drinks_d6246522-59e9-43e9-b02c-d62257699413.png",
+            "text": "Juices & Drinks",
+            "button_link": "shopify:\/\/collections\/juices-drinks"
+          }
+        },
+        "148d59ec-5bec-4e6a-8baf-59980253387b": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ready_to_cook_c9a8acdd-c059-43bf-a88d-ab89f8250959.png",
+            "text": "Ready to cook",
+            "button_link": "shopify:\/\/collections\/instant-foods"
+          }
+        },
+        "ba294cb6-3aad-445c-be17-e21fbef92695": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dips_and_sauces_6d92b1e4-1b48-4266-a3d3-4f1aa4c97fae.png",
+            "text": "Dips & Sauces",
+            "button_link": "shopify:\/\/collections\/dips-sauces-1"
+          }
+        }
+      },
+      "block_order": [
+        "7193a514-372a-4402-a03b-4d4eb5dfa9fd",
+        "0b00d90f-79bd-42c8-a862-c037ae7a1019",
+        "3c7f48ba-9a55-4e18-87da-71c3a97599b1",
+        "564cdc58-c399-41bf-9bd3-6416edd8a3b4",
+        "484f0caf-c471-4a42-b197-da8b982f7fde",
+        "09a12a68-298d-47c9-82ad-ac6a9a6e78df",
+        "cca16658-0a72-46f9-b6c6-b0d8357610d9",
+        "d87529d8-3b3c-43c1-9413-c502c658d27c",
+        "99b3b45d-68e3-44b3-a59f-50688501004d",
+        "15bea36d-7ccb-472c-9d71-601626b683f0",
+        "f087325d-0949-4a34-ab30-a26e0c769ffa",
+        "7e8a76f3-3e86-49ca-9d06-fb95a09c7a58",
+        "a579a74f-b6de-4b9b-aa1a-33dda2686507",
+        "652b5c89-be77-4a99-a503-56fa64fb64bb",
+        "148d59ec-5bec-4e6a-8baf-59980253387b",
+        "ba294cb6-3aad-445c-be17-e21fbef92695"
+      ],
+      "settings": {
+        "background-color": "#efe8f5",
+        "padding_top": 25,
+        "padding_bottom": 25
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "65b56a66-27c9-4f20-bef2-e45184245790",
+    "f33871ab-d632-49f6-83c9-6c5d2b0e78a7",
+    "product-grid"
+  ]
+}

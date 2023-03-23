@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "f1d78a0f-e2c2-4788-83c0-f7d308ba98a3": {
+      "type": "mm-collection-product-page",
+      "disabled": true,
+      "blocks": {
+        "7ddbad10-f736-4e7d-95d9-d0e1bb99bc5e": {
+          "type": "text",
+          "settings": {
+            "text": "Gourmet Gifts",
+            "button_link": "shopify:\/\/collections\/gourmet-gifts"
+          }
+        },
+        "07236106-9960-4f6f-aafe-f2cc444b4e81": {
+          "type": "text",
+          "settings": {
+            "text": "Value Combos",
+            "button_link": "shopify:\/\/collections\/value-combos"
+          }
+        },
+        "b1e60be5-b38b-46fb-bbd4-b171e1d3c2f5": {
+          "type": "text",
+          "settings": {
+            "text": "New Launches",
+            "button_link": "shopify:\/\/collections\/new-launches-1"
+          }
+        },
+        "8dbe36e4-a455-4915-a2b2-03cd617ec1c2": {
+          "type": "text",
+          "settings": {
+            "text": "Diet & Nutrition",
+            "button_link": "shopify:\/\/collections\/weight-management"
+          }
+        },
+        "2e39960c-4cd8-49db-8828-116b5ffc2d28": {
+          "type": "text",
+          "settings": {
+            "text": "Dry Fruits & Nuts",
+            "button_link": "shopify:\/\/collections\/dry-fruits-nuts"
+          }
+        },
+        "0c2207a8-aa42-420d-8b52-13d7308c9edc": {
+          "type": "text",
+          "settings": {
+            "text": "Oil, Atta & more",
+            "button_link": "shopify:\/\/collections\/oil-atta-more"
+          }
+        },
+        "ad3ade3b-2d50-4765-9c53-689c5b0d95ee": {
+          "type": "text",
+          "settings": {
+            "text": "Tea & Coffee",
+            "button_link": "shopify:\/\/collections\/tea-coffee"
+          }
+        },
+        "2822776c-7271-4dfd-8669-1411859f9b29": {
+          "type": "text",
+          "settings": {
+            "text": "Biscuits & Cookies",
+            "button_link": "shopify:\/\/collections\/biscuits-cookies"
+          }
+        },
+        "940f2a37-dae8-4ce4-8d50-17ddc2c01ed4": {
+          "type": "text",
+          "settings": {
+            "text": "Chocolates & Mithai",
+            "button_link": "shopify:\/\/collections\/chocolates-mithai"
+          }
+        },
+        "f7bf9a75-8721-40f9-83f8-cb84377c5478": {
+          "type": "text",
+          "settings": {
+            "text": "Chips & Snacks",
+            "button_link": "shopify:\/\/collections\/chips-snacks"
+          }
+        },
+        "d0807b5b-38e2-40c9-9317-72e784b24cff": {
+          "type": "text",
+          "settings": {
+            "text": "Namkeen",
+            "button_link": "shopify:\/\/collections\/namkeen"
+          }
+        },
+        "9858c3c3-33ff-41d9-b053-bcd56fb96ecb": {
+          "type": "text",
+          "settings": {
+            "text": "Cereals & Museli",
+            "button_link": "shopify:\/\/collections\/cereals-muesli"
+          }
+        },
+        "adee6cbf-f32e-41d4-8090-684e129918a6": {
+          "type": "text",
+          "settings": {
+            "text": "Jams & Spreads",
+            "button_link": "shopify:\/\/collections\/jams-spreads"
+          }
+        },
+        "103a6e09-82af-454c-9d60-40d435a786ea": {
+          "type": "text",
+          "settings": {
+            "text": "Cold Drinks & Juices",
+            "button_link": "shopify:\/\/collections\/juices-drinks"
+          }
+        },
+        "e54d553d-95b8-454d-94fe-758814dae6c5": {
+          "type": "text",
+          "settings": {
+            "text": "Ready to Cook",
+            "button_link": "shopify:\/\/collections\/instant-foods"
+          }
+        },
+        "ef562358-7a3f-4a09-a2fb-8dba1d543775": {
+          "type": "text",
+          "settings": {
+            "text": "Dips & Sauces",
+            "button_link": "shopify:\/\/collections\/dips-sauces-1"
+          }
+        }
+      },
+      "block_order": [
+        "7ddbad10-f736-4e7d-95d9-d0e1bb99bc5e",
+        "07236106-9960-4f6f-aafe-f2cc444b4e81",
+        "b1e60be5-b38b-46fb-bbd4-b171e1d3c2f5",
+        "8dbe36e4-a455-4915-a2b2-03cd617ec1c2",
+        "2e39960c-4cd8-49db-8828-116b5ffc2d28",
+        "0c2207a8-aa42-420d-8b52-13d7308c9edc",
+        "ad3ade3b-2d50-4765-9c53-689c5b0d95ee",
+        "2822776c-7271-4dfd-8669-1411859f9b29",
+        "940f2a37-dae8-4ce4-8d50-17ddc2c01ed4",
+        "f7bf9a75-8721-40f9-83f8-cb84377c5478",
+        "d0807b5b-38e2-40c9-9317-72e784b24cff",
+        "9858c3c3-33ff-41d9-b053-bcd56fb96ecb",
+        "adee6cbf-f32e-41d4-8090-684e129918a6",
+        "103a6e09-82af-454c-9d60-40d435a786ea",
+        "e54d553d-95b8-454d-94fe-758814dae6c5",
+        "ef562358-7a3f-4a09-a2fb-8dba1d543775"
+      ],
+      "settings": {
+        "background-color": "#f7eff7",
+        "padding_top": 14,
+        "padding_bottom": 13
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "3d01b866-4d36-42b6-8939-e8da2195aad3": {
+          "type": "usp-block",
+          "settings": {}
+        },
+        "51da3428-ec1b-4ed8-91b0-8217f8f64fa8": {
+          "type": "coupon-block",
+          "disabled": true,
+          "settings": {
+            "heading": "<p><strong>Get Flat 15% off on all orders above ₹2499<\/strong><\/p>",
+            "subheading": "",
+            "coupon-head": "<p>USE COUPON CODE<\/p>",
+            "coupon-code": "<p>EOJS15<\/p>"
+          }
+        },
+        "508cb8da-b5bc-46a6-9986-6006adf39d68": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "68fa4936-26e7-428b-b89e-d0bee05e7ff8": {
+          "type": "upsell--block",
+          "settings": {
+            "upsell-heading": "<p>These go great <strong>together<\/strong><\/p>"
+          }
+        },
+        "f71a8ca4-3dd8-402f-b497-d56326dbae50": {
+          "type": "usp-section",
+          "settings": {
+            "usp-image1": "<svg id=\"icon\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"31.877\" height=\"23.596\" viewbox=\"0 0 31.877 23.596\">\n  <circle id=\"Ellipse_15645\" data-name=\"Ellipse 15645\" cx=\"1.027\" cy=\"1.027\" r=\"1.027\" transform=\"translate(23.885 14.635)\" fill=\"#3c3c3b\"><\/circle>\n  <circle id=\"Ellipse_15646\" data-name=\"Ellipse 15646\" cx=\"1.027\" cy=\"1.027\" r=\"1.027\" transform=\"translate(12.403 14.635)\" fill=\"#3c3c3b\"><\/circle>\n  <path id=\"Path_328274\" data-name=\"Path 328274\" d=\"M711.526,2175.571a3.286,3.286,0,1,0-2.86-3.259A3.082,3.082,0,0,0,711.526,2175.571Zm0-5.369a2.157,2.157,0,1,1-1.711,2.111A1.945,1.945,0,0,1,711.526,2170.2Z\" transform=\"translate(-692.355 -2156.651)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_328275\" data-name=\"Path 328275\" d=\"M439.715,1968.829l2.053,13.754a.622.622,0,0,0,.615.531.61.61,0,0,0,.093-.007.622.622,0,0,0,.524-.707l-1.961-13.139,22.671-3.385.2,1.311a.622.622,0,1,0,1.231-.184l-.287-1.926a.623.623,0,0,0-.245-.409.631.631,0,0,0-.462-.115l-23.9,3.569A.622.622,0,0,0,439.715,1968.829Z\" transform=\"translate(-439.708 -1964.547)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_328276\" data-name=\"Path 328276\" d=\"M514.992,2026.622l-24.091,1.92a.622.622,0,0,0-.571.67l1.156,14.508a.622.622,0,0,0,.62.573l.05,0a.622.622,0,0,0,.571-.67l-1.107-13.888,22.85-1.822.134,1.677a.622.622,0,0,0,1.241-.1l-.183-2.3A.624.624,0,0,0,514.992,2026.622Z\" transform=\"translate(-487.259 -2022.855)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_328277\" data-name=\"Path 328277\" d=\"M571.1,2091.951H546.935a.623.623,0,0,0-.622.623V2107.2a.623.623,0,0,0,.622.623H571.1a.623.623,0,0,0,.622-.623v-14.624A.623.623,0,0,0,571.1,2091.951Zm-.622,14.625H547.558V2093.2H570.48Z\" transform=\"translate(-539.848 -2084.224)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_328278\" data-name=\"Path 328278\" d=\"M592.258,2139.933a1.474,1.474,0,0,1,1.472,1.472.622.622,0,0,0,.622.622h14.481a.623.623,0,0,0,.622-.623,1.474,1.474,0,0,1,1.472-1.472.623.623,0,0,0,.622-.622V2133.6a.622.622,0,0,0-.622-.622,1.474,1.474,0,0,1-1.472-1.472.622.622,0,0,0-.622-.622H594.353a.623.623,0,0,0-.622.622,1.474,1.474,0,0,1-1.472,1.472.623.623,0,0,0-.622.622v5.714A.623.623,0,0,0,592.258,2139.933Zm.622-5.786a2.726,2.726,0,0,0,2.022-2.022h13.381a2.726,2.726,0,0,0,2.022,2.022v4.613a2.726,2.726,0,0,0-2.022,2.022H594.9a2.726,2.726,0,0,0-2.022-2.022Z\" transform=\"translate(-582.422 -2120.792)\" fill=\"#3c3c3b\"><\/path>\n<\/svg>",
+            "usp-text1": "<p>COD Available<\/p>",
+            "usp-image2": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"48.128\" height=\"25.096\" viewbox=\"0 0 48.128 25.096\">\n  <g id=\"Group_212986\" data-name=\"Group 212986\" transform=\"translate(0.75 0.75)\">\n    <path id=\"Path_328268\" data-name=\"Path 328268\" d=\"M62.8,97.911H58.249a1.788,1.788,0,0,1-1.789-1.789V92.1\" transform=\"translate(-49.786 -78.752)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <path id=\"Path_328269\" data-name=\"Path 328269\" d=\"M56.46,59.346V56.6a2.1,2.1,0,0,1,2.1-2.1H80.529a2.1,2.1,0,0,1,2.1,2.1V71.561a2.1,2.1,0,0,1-2.1,2.1H70.567\" transform=\"translate(-49.786 -54.5)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <line id=\"Line_54663\" data-name=\"Line 54663\" x1=\"3.039\" transform=\"translate(32.84 19.159)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n    <path id=\"Path_328270\" data-name=\"Path 328270\" d=\"M130.17,61.93h8.264a1.879,1.879,0,0,1,1.608.909l3.646,6.056a1.852,1.852,0,0,1,.27.966v6.716a1.873,1.873,0,0,1-1.874,1.874h-.813\" transform=\"translate(-97.33 -59.292)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <path id=\"Path_328271\" data-name=\"Path 328271\" d=\"M138.73,102.562a3.972,3.972,0,1,1,3.972,3.972,3.972,3.972,0,0,1-3.972-3.972\" transform=\"translate(-102.851 -82.938)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <circle id=\"Ellipse_15644\" data-name=\"Ellipse 15644\" cx=\"3.972\" cy=\"3.972\" r=\"3.972\" transform=\"translate(12.982 15.652)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/circle>\n    <path id=\"Path_328272\" data-name=\"Path 328272\" d=\"M146.62,65.69v4.679a2.248,2.248,0,0,0,2.247,2.247h3.717\" transform=\"translate(-107.94 -61.718)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <line id=\"Line_54664\" data-name=\"Line 54664\" x2=\"14.434\" transform=\"translate(4.207 7.434)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n    <line id=\"Line_54665\" data-name=\"Line 54665\" x2=\"14.438\" transform=\"translate(0 10.707)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n  <\/g>\n<\/svg>",
+            "usp-text2": "<p>Delivery in 3-5 days<\/p>",
+            "usp-image3": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"30.277\" height=\"26.26\" viewbox=\"0 0 30.277 26.26\">\n  <g id=\"Group_213081\" data-name=\"Group 213081\" transform=\"translate(0.5 0.5)\">\n    <g id=\"Group_210929\" data-name=\"Group 210929\">\n      <g id=\"Group_210909\" data-name=\"Group 210909\">\n        <path id=\"Path_327566\" data-name=\"Path 327566\" d=\"M75.39,72.684l11.109,5.9,11.09-5.9L86.191,67.5Z\" transform=\"translate(-75.39 -67.5)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n        <path id=\"Path_327654\" data-name=\"Path 327654\" d=\"M0,5.463V0\" transform=\"translate(22.198 5.184)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-width=\"1\"><\/path>\n        <path id=\"Path_327567\" data-name=\"Path 327567\" d=\"M83.18,97.336l6.219,3.617,4.229-2.416\" transform=\"translate(-78.296 -78.529)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n        <line id=\"Line_54409\" data-name=\"Line 54409\" x2=\"0.702\" y2=\"0.407\" transform=\"translate(2.307 17.309)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/line>\n        <path id=\"Path_327568\" data-name=\"Path 327568\" d=\"M75.39,75.77V86.553l1.116.646\" transform=\"translate(-75.39 -70.586)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n        <line id=\"Line_54410\" data-name=\"Line 54410\" x1=\"0.006\" y2=\"11.341\" transform=\"translate(11.102 11.084)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/line>\n      <\/g>\n      <line id=\"Line_54411\" data-name=\"Line 54411\" y1=\"5.586\" x2=\"10.776\" transform=\"translate(5.115 2.313)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/line>\n    <\/g>\n    <g id=\"Group_211614\" data-name=\"Group 211614\" transform=\"translate(15.111 11.095)\">\n      <circle id=\"Ellipse_4636\" data-name=\"Ellipse 4636\" cx=\"7.083\" cy=\"7.083\" r=\"7.083\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/circle>\n      <path id=\"Path_327656\" data-name=\"Path 327656\" d=\"M-3306.9-5055.558l1.626,2.184,5.367-4.266\" transform=\"translate(3311.216 5062.949)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n    <\/g>\n  <\/g>\n<\/svg>",
+            "usp-text3": "<p>Easy Return<\/p>"
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p>The open Secret <strong>Promise<\/strong><\/p>",
+            "icon": "none",
+            "content": "<p>$promise<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p>Common <strong>Questions<\/strong><\/p>",
+            "icon": "none",
+            "content": "<p>$questions<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>Key Ingredients<\/strong><\/p>",
+            "icon": "none",
+            "content": "<p>$ingredients<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p>Nutrition <strong>Facts<\/strong><\/p>",
+            "icon": "none",
+            "content": "<p>$facts<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "price",
+        "buy_buttons",
+        "3d01b866-4d36-42b6-8939-e8da2195aad3",
+        "51da3428-ec1b-4ed8-91b0-8217f8f64fa8",
+        "508cb8da-b5bc-46a6-9986-6006adf39d68",
+        "68fa4936-26e7-428b-b89e-d0bee05e7ff8",
+        "f71a8ca4-3dd8-402f-b497-d56326dbae50",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "thumbnail",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "489d8f07-2ae0-4525-a30a-dc48d7746cdb": {
+      "type": "product-page-banner",
+      "settings": {}
+    },
+    "judgeme_section_review_widget_be22": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "97c21992-95e4-4a7e-a274-f7236d4163ef": {
+      "type": "tab-switch",
+      "disabled": true,
+      "blocks": {
+        "945a8b7c-1007-449a-a819-b8675df9a32d": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Open Secret",
+            "collection": "high-margin-os-best-sellers",
+            "product_limit": 4
+          }
+        },
+        "e6d1574f-a534-4d1a-83a2-be70d4c9273c": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Value combos",
+            "collection": "high-margin-value-combos",
+            "product_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "945a8b7c-1007-449a-a819-b8675df9a32d",
+        "e6d1574f-a534-4d1a-83a2-be70d4c9273c"
+      ],
+      "settings": {
+        "background": "#ffffff",
+        "heading": "<p>Shop Our <strong>Bestsellers<\/strong><\/p>",
+        "heading_size": "h1",
+        "padding_top": 0,
+        "padding_bottom": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false
+      }
+    }
+  },
+  "order": [
+    "f1d78a0f-e2c2-4788-83c0-f7d308ba98a3",
+    "main",
+    "489d8f07-2ae0-4525-a30a-dc48d7746cdb",
+    "judgeme_section_review_widget_be22",
+    "product-recommendations",
+    "97c21992-95e4-4a7e-a274-f7236d4163ef"
+  ]
+}

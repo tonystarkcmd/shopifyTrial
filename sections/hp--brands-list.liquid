@@ -1,0 +1,96 @@
+<div class="hp--brands_list">
+  <div class="page-width">
+    <div class="section_details">
+      <h2 class="section_title">{{ section.settings.section_title }}</h2>
+      {% if section.settings.view_button_link != null %}
+      <div class="small-hide">
+        <a href="{{ section.settings.view_button_link }}">
+          <span>{{ section.settings.view_button }}</span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="8" viewBox="0 0 5 8">
+              <path id="Path_305338" data-name="Path 305338" d="M1171.756,611.565a.782.782,0,0,0,0-1.131l-3.332-3.2a.863.863,0,0,0-1.183,0,.778.778,0,0,0,0,1.131L1169.99,611l-2.749,2.634a.778.778,0,0,0,0,1.131.863.863,0,0,0,1.183,0Z" transform="translate(-1166.998 -607)" fill="#3c3c3b"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+    
+    <div class="brands_block">
+      {% for block in section.blocks %}
+        <div class="brand_container">
+          <a href="{{ block.settings.brand_link }}">
+            <div class="brand_logo">
+              <img src="{{ block.settings.image | img_url: '160x160' }}" alt="brand logo" loading="lazy" />           
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+   {% if section.settings.view_button_link != null %}
+    <div class="medium-hide large-up-hide section__btn">
+        <a href="{{ section.settings.view_button_link }}">
+          <span>{{ section.settings.view_button }}</span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="8" viewBox="0 0 5 8">
+              <path id="Path_305338" data-name="Path 305338" d="M1171.756,611.565a.782.782,0,0,0,0-1.131l-3.332-3.2a.863.863,0,0,0-1.183,0,.778.778,0,0,0,0,1.131L1169.99,611l-2.749,2.634a.778.778,0,0,0,0,1.131.863.863,0,0,0,1.183,0Z" transform="translate(-1166.998 -607)" fill="#3c3c3b"/>
+            </svg>
+          </span>
+        </a>
+      </div>  
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Homepage Brand List",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "section_title",
+      "label": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "view_button",
+      "label": "View Button"
+    },
+    {
+      "type": "url",
+      "id": "view_button_link",
+      "label": "View Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "brand_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage Brands List"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,415 @@
+{
+  "sections": {
+    "main": {
+      "type": "All-brands",
+      "blocks": {
+        "9b8703bb-6dfb-4c08-bda3-a1fb16ef5596": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OS-logo_1.png",
+            "brand_link": "shopify:\/\/collections\/open-secret"
+          }
+        },
+        "3807dcc2-a570-444c-95a6-d07f38072c51": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healthy_mithai_co.png",
+            "brand_link": "shopify:\/\/collections\/healthy-mithai-co"
+          }
+        },
+        "b5db7473-a87f-4c58-9658-bb9a461337f6": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eatopia_logo.png",
+            "brand_link": "shopify:\/\/collections\/eatopia"
+          }
+        },
+        "1d46c155-9b01-40f9-8819-ed70e7b1a4e7": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BORN_REBORN_-_LOGO.png",
+            "brand_link": "shopify:\/\/collections\/born-reborn"
+          }
+        },
+        "985faa5f-cca7-484c-9ad9-afa308628d2c": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Good_dot.png",
+            "brand_link": "shopify:\/\/collections\/good-dot"
+          }
+        },
+        "abebf4fb-306d-4179-b729-8446bb91b26a": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Anveshan.png",
+            "brand_link": "shopify:\/\/collections\/anveshan"
+          }
+        },
+        "59efa632-aa87-41ae-8f9e-f6a0fb88f6a2": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/miheso_logo.png",
+            "brand_link": "shopify:\/\/collections\/miheso"
+          }
+        },
+        "9ab7fbb6-5fc9-41d1-8425-616fd2c22109": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Auric_Logo_-_Copy.png",
+            "brand_link": "shopify:\/\/collections\/auric"
+          }
+        },
+        "c6e24ba4-8093-476e-a4c5-a849fdc8dfcf": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image0.jpg",
+            "brand_link": "shopify:\/\/collections\/sattviko"
+          }
+        },
+        "4202de6b-05f6-4938-b135-5d80410bd61d": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TOT_Logo.png",
+            "brand_link": "shopify:\/\/collections\/trick-or-treat"
+          }
+        },
+        "bf33121e-d58d-4d39-9c23-28ad3e9cb496": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/farmley.png",
+            "brand_link": "shopify:\/\/collections\/farmley"
+          }
+        },
+        "f41700f8-8d04-4c68-ba78-1d0edf6087ac": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gourmet_Craft_Logo_-_Copy.png",
+            "brand_link": "shopify:\/\/collections\/gourmet-craft"
+          }
+        },
+        "60b20a1c-ab59-4e17-a064-9fcdd0244e7b": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DA_logo_9cc7543f-d0d4-485c-987c-c4c97981c9fd.png",
+            "brand_link": "shopify:\/\/collections\/dough-adventures"
+          }
+        },
+        "6111e6ea-53dc-489d-bde5-86a861f433c6": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BRB_logo_1.png",
+            "brand_link": "shopify:\/\/collections\/brb-popped-chips"
+          }
+        },
+        "35378789-95ef-4af9-8dfc-2d84c92b1e38": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/br-logo.png",
+            "brand_link": "shopify:\/\/collections\/brotos"
+          }
+        },
+        "12331239-bde2-4807-827e-aa47b9fd9c9e": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4700bc-logo.png",
+            "brand_link": "shopify:\/\/collections\/4700bc"
+          }
+        },
+        "45b13daa-c7fd-4f00-a270-cbc28db59ddd": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Yoga_bar_4acbe42c-c508-4857-b2f9-05c13d4a2617.png",
+            "brand_link": "shopify:\/\/collections\/yoga-bar"
+          }
+        },
+        "71403824-05f5-4a51-950e-ca7dc2606fb0": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Alpino_logo.png",
+            "brand_link": "shopify:\/\/collections\/alpino"
+          }
+        },
+        "f93b9404-4e56-4005-9c68-fca841104b6d": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mojoco.png",
+            "brand_link": "shopify:\/\/collections\/mojoco"
+          }
+        },
+        "51b8cb53-6adc-486c-b228-e1a6ed337d9b": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wholly-bieng-logo12.png",
+            "brand_link": "shopify:\/\/collections\/wholly-being"
+          }
+        },
+        "a2214eda-5c67-48df-bfae-b9bd28cee776": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Truefarm.png",
+            "brand_link": "shopify:\/\/collections\/truefarm"
+          }
+        },
+        "15ba0a2a-4c51-4473-a8ec-fc74d406c22b": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CB_logo_1.png",
+            "brand_link": "shopify:\/\/collections\/country-bean"
+          }
+        },
+        "32adb1b3-569c-4aec-b679-f22b96e63b9c": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RAW_logo.png",
+            "brand_link": "shopify:\/\/collections\/raw-pressery"
+          }
+        },
+        "20453560-d7d5-4fe8-9419-ec59e97c79e5": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Neuherbs.png",
+            "brand_link": "shopify:\/\/collections\/neuherbs"
+          }
+        },
+        "6bfbf497-c2be-4244-b0ad-5a0ead956a63": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gramiyaa.png",
+            "brand_link": "shopify:\/\/collections\/gramiyaa"
+          }
+        },
+        "ddd9db54-25c5-443e-967a-94b15bce5841": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gladful.png",
+            "brand_link": "shopify:\/\/collections\/gladful"
+          }
+        },
+        "ccbb822c-5129-490b-b474-cb0f35f063ec": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/keeros_logo_1000x1000_89000f7a-d8e7-44a5-b116-7e8bf554c404.png",
+            "brand_link": "shopify:\/\/collections\/keeros"
+          }
+        },
+        "9d1e7a35-08eb-415c-9875-0f96e0b7069d": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Prime_foods.png",
+            "brand_link": "shopify:\/\/collections\/prime-foods"
+          }
+        },
+        "d35ebf07-d79a-4197-b286-b86cb2376b46": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BLUE_TEA_NEW_LOGO-03_410x_9962df53-7eae-4133-93d7-ac5505494b09.png",
+            "brand_link": "shopify:\/\/collections\/blue-tea"
+          }
+        },
+        "4e3325ca-b7bb-4d07-9c59-77649d6caff3": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jiwa_logo.png",
+            "brand_link": "shopify:\/\/collections\/jiwa"
+          }
+        },
+        "cb38252c-0873-4f69-8cf1-33118bd14a99": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/625fde8169888153dc487f16_MY_FITNESS_LOGO.png",
+            "brand_link": "shopify:\/\/collections\/myfitness"
+          }
+        },
+        "dd4e4c73-b746-4c52-933f-cf85a83be852": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gold_boyo_logo_with_boldasyou.webp",
+            "brand_link": "shopify:\/\/collections\/boyo"
+          }
+        },
+        "f1f2cf7a-d7bd-442c-a79c-ccd30475953e": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fix_Coffee_logo.png",
+            "brand_link": "shopify:\/\/collections\/fix-coffee"
+          }
+        },
+        "748602d8-b696-4470-96bf-577fbd76aeee": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Under_the_Mango_Tree.png",
+            "brand_link": "shopify:\/\/collections\/under-the-mango-tree"
+          }
+        },
+        "802f7a02-c281-4a73-967d-09c7caa78066": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Storia.png",
+            "brand_link": "shopify:\/\/collections\/storia-beverages"
+          }
+        },
+        "9f10a627-2b84-4bba-b00c-474b1da7a4e1": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tru_nativ.png",
+            "brand_link": "shopify:\/\/collections\/trunativ"
+          }
+        },
+        "63f402eb-3bcc-4887-99d1-1c560c3f8d40": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vediko.png",
+            "brand_link": "shopify:\/\/collections\/vediko"
+          }
+        },
+        "cbb511ee-0dbf-4f21-9934-cf3ec115c070": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/new-logo.png",
+            "brand_link": "shopify:\/\/collections\/lil-goodness"
+          }
+        },
+        "59aa4552-d6af-4dd3-ab92-0a0746e279bb": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grainic.png",
+            "brand_link": "shopify:\/\/collections\/grainic"
+          }
+        },
+        "bb0aa29a-cdec-4b4b-ab70-a6e11c7796ae": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/709f19bb-e04b-4d53-8c74-37cbe0d06d79.png",
+            "brand_link": "shopify:\/\/collections\/barosi"
+          }
+        },
+        "d8b5f76a-2980-4dee-9310-b28092cd3f80": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kesar_co.png",
+            "brand_link": "shopify:\/\/collections\/kesarco"
+          }
+        },
+        "a5d0cb67-21b5-4322-ba82-6dbaa881f2e1": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Plix_1_1.png",
+            "brand_link": "shopify:\/\/collections\/plix-the-plant-fix"
+          }
+        },
+        "118e8f0e-550c-433a-9756-646a3879e49b": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1621242934_egNyfs_Rage_Coffee_Logo_1_cc5b5548-a4e3-4de1-9acb-ec92359236e2.png",
+            "brand_link": "shopify:\/\/collections\/rage-coffee"
+          }
+        },
+        "422d64a1-7b4c-4a68-b832-9be286be6711": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vahdam-Teas-logo_8c1633b3-16a0-4b02-8d1e-ec19e6363760.png",
+            "brand_link": "shopify:\/\/collections\/vahdam"
+          }
+        },
+        "ce4f8aef-6ee4-428d-be72-b95c1a1448b6": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/standout_20snacking.png",
+            "brand_link": "shopify:\/\/products\/festive-special-hamper"
+          }
+        },
+        "c7c42291-aebc-4ba2-8cb1-6379b8a68ee3": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4353c06a-e412-4071-a18d-bdad0ab974de_b08a037c-1a41-4cc3-a444-046c797136aa.png",
+            "brand_link": "shopify:\/\/collections\/green-snack-co"
+          }
+        },
+        "a34eb3dd-4e51-4346-8580-6d72ac1e9d42": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/epigamia_logo_e4b76cce-9186-4b74-aab0-85f6ddbb4115.png",
+            "brand_link": "shopify:\/\/collections\/epigamia"
+          }
+        },
+        "fbef9273-c183-4a11-b9c7-7e3fd91dceed": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_Gourmet_Jar.png",
+            "brand_link": "shopify:\/\/collections\/the-gourmet-jar"
+          }
+        },
+        "4c266db4-a805-43fd-9d00-1ce476ed1c26": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Promunch.png",
+            "brand_link": "shopify:\/\/collections\/promunch-1"
+          }
+        },
+        "9ddd8aa6-d43b-4ea2-998f-cbf0acc36ad6": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GAW-Logo_1_02a34953-e309-4cea-9f5b-7931a676d20a.png",
+            "brand_link": "shopify:\/\/collections\/get-a-whey"
+          }
+        }
+      },
+      "block_order": [
+        "9b8703bb-6dfb-4c08-bda3-a1fb16ef5596",
+        "3807dcc2-a570-444c-95a6-d07f38072c51",
+        "b5db7473-a87f-4c58-9658-bb9a461337f6",
+        "1d46c155-9b01-40f9-8819-ed70e7b1a4e7",
+        "985faa5f-cca7-484c-9ad9-afa308628d2c",
+        "abebf4fb-306d-4179-b729-8446bb91b26a",
+        "59efa632-aa87-41ae-8f9e-f6a0fb88f6a2",
+        "9ab7fbb6-5fc9-41d1-8425-616fd2c22109",
+        "c6e24ba4-8093-476e-a4c5-a849fdc8dfcf",
+        "4202de6b-05f6-4938-b135-5d80410bd61d",
+        "bf33121e-d58d-4d39-9c23-28ad3e9cb496",
+        "f41700f8-8d04-4c68-ba78-1d0edf6087ac",
+        "60b20a1c-ab59-4e17-a064-9fcdd0244e7b",
+        "6111e6ea-53dc-489d-bde5-86a861f433c6",
+        "35378789-95ef-4af9-8dfc-2d84c92b1e38",
+        "12331239-bde2-4807-827e-aa47b9fd9c9e",
+        "45b13daa-c7fd-4f00-a270-cbc28db59ddd",
+        "71403824-05f5-4a51-950e-ca7dc2606fb0",
+        "f93b9404-4e56-4005-9c68-fca841104b6d",
+        "51b8cb53-6adc-486c-b228-e1a6ed337d9b",
+        "a2214eda-5c67-48df-bfae-b9bd28cee776",
+        "15ba0a2a-4c51-4473-a8ec-fc74d406c22b",
+        "32adb1b3-569c-4aec-b679-f22b96e63b9c",
+        "20453560-d7d5-4fe8-9419-ec59e97c79e5",
+        "6bfbf497-c2be-4244-b0ad-5a0ead956a63",
+        "ddd9db54-25c5-443e-967a-94b15bce5841",
+        "ccbb822c-5129-490b-b474-cb0f35f063ec",
+        "9d1e7a35-08eb-415c-9875-0f96e0b7069d",
+        "d35ebf07-d79a-4197-b286-b86cb2376b46",
+        "4e3325ca-b7bb-4d07-9c59-77649d6caff3",
+        "cb38252c-0873-4f69-8cf1-33118bd14a99",
+        "dd4e4c73-b746-4c52-933f-cf85a83be852",
+        "f1f2cf7a-d7bd-442c-a79c-ccd30475953e",
+        "748602d8-b696-4470-96bf-577fbd76aeee",
+        "802f7a02-c281-4a73-967d-09c7caa78066",
+        "9f10a627-2b84-4bba-b00c-474b1da7a4e1",
+        "63f402eb-3bcc-4887-99d1-1c560c3f8d40",
+        "cbb511ee-0dbf-4f21-9934-cf3ec115c070",
+        "59aa4552-d6af-4dd3-ab92-0a0746e279bb",
+        "bb0aa29a-cdec-4b4b-ab70-a6e11c7796ae",
+        "d8b5f76a-2980-4dee-9310-b28092cd3f80",
+        "a5d0cb67-21b5-4322-ba82-6dbaa881f2e1",
+        "118e8f0e-550c-433a-9756-646a3879e49b",
+        "422d64a1-7b4c-4a68-b832-9be286be6711",
+        "ce4f8aef-6ee4-428d-be72-b95c1a1448b6",
+        "c7c42291-aebc-4ba2-8cb1-6379b8a68ee3",
+        "a34eb3dd-4e51-4346-8580-6d72ac1e9d42",
+        "fbef9273-c183-4a11-b9c7-7e3fd91dceed",
+        "4c266db4-a805-43fd-9d00-1ce476ed1c26",
+        "9ddd8aa6-d43b-4ea2-998f-cbf0acc36ad6"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,716 @@
+{
+  "current": {
+    "checkout-message": "",
+    "checkout-popup-image": "shopify:\/\/shop_images\/1-_1.png",
+    "checkout-popup-line-1": "<p>You have discount_amount saved<\/p>",
+    "checkout-popup-line-1-color": "#000000",
+    "checkout-popup-line-2": "<p>on Membership<\/p>",
+    "checkout-popup-line-3": "<p>YAY!!<\/p>",
+    "checkout-popup-price-color": "#801480",
+    "account-wallet-message": "<p>Wallet will be available soon<\/p>",
+    "account-wallet-message-bg": "#ffefef",
+    "account-wallet-message-color": "#000f61",
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#591651",
+    "gradient_accent_1": "",
+    "colors_accent_2": "#334fb4",
+    "gradient_accent_2": "",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#ffffff",
+    "gradient_background_1": "",
+    "colors_background_2": "#f3f3f3",
+    "gradient_background_2": "",
+    "type_header_font": "inter_n4",
+    "heading_scale": 100,
+    "type_body_font": "inter_n4",
+    "body_scale": 100,
+    "page_width": 1440,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 8,
+    "spacing_grid_vertical": 8,
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 6,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 6,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "standard",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-2",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "background-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 10,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 4,
+    "collection_card_shadow_blur": 5,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "background-2",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 10,
+    "blog_card_corner_radius": 0,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 4,
+    "blog_card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 0,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "top left",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "background-2",
+    "sold_out_badge_color_scheme": "inverse",
+    "accent_icons": "text",
+    "social_twitter_link": "https:\/\/twitter.com\/OpenSecretSnack",
+    "social_facebook_link": "https:\/\/www.facebook.com\/opensecretsnacks",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/opensecretsnacks\/",
+    "social_tiktok_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/OS-logo_2.png",
+    "currency_code_enabled": true,
+    "cart_type": "drawer",
+    "empty_button_link": "\/",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "free_shipping_title": "FREE SHIPPING",
+    "free_shipping_threshold": 300,
+    "free_shipping_description": "<p>Add items worth <strong>remaining_amount<\/strong> to get <strong>Free Delivery<\/strong><\/p>",
+    "free_shipping_acquired": "<p><strong>Yay! You've unlocked Free Delivery!!<\/strong><\/p>",
+    "cart_coupon_text": "<p><strong>Exciting offers available at checkout!<\/strong><\/p>",
+    "cart_coupon_text_color": "#282c3f",
+    "cart_coupon_bg_color": "#d4edda",
+    "cart_drawer_upsell": true,
+    "cart_drawer_upsell_title": "<p>Frequently Bought <strong>Together<\/strong><\/p>",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Group_210290.jpg",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "70e136d0-107c-4447-8607-657295495d8a": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Get Flat 15% off on our newly launched Unjunked Fizz. Use code - FIZZ15",
+              "text_alignment": "center",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/collections\/unjunked-fizz"
+            }
+          },
+          "67eacb9d-a010-46bd-9d56-147472be71a4": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Check out our New launch -  Open Secret Walnut Kernels & Roasted & Salted Pistachios",
+              "text_alignment": "center",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/collections\/dry-fruits-nuts"
+            }
+          },
+          "01f43b97-0396-417c-acf0-7f3fbf5f85c3": {
+            "type": "announcement",
+            "settings": {
+              "text": "ZERO Maida | ZERO Palm Oil | ZERO Artificial Preservatives",
+              "text_alignment": "center",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "70e136d0-107c-4447-8607-657295495d8a",
+          "67eacb9d-a010-46bd-9d56-147472be71a4",
+          "01f43b97-0396-417c-acf0-7f3fbf5f85c3"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "9b421fff-fea3-45af-88c4-4205d71d20ca": {
+            "type": "megamenu",
+            "settings": {
+              "megamenu-id": "All Catagories",
+              "megamenu-image": "shopify:\/\/shop_images\/Banner_b18caed3-47f4-47ce-b52a-97ae01d4cc5f.png"
+            }
+          },
+          "9f0a872a-78c0-4060-88c4-eccff1edb3ca": {
+            "type": "megamenu",
+            "settings": {
+              "megamenu-id": "Brands"
+            }
+          },
+          "51b0a7e5-8d04-46a7-b0ba-1f45b4ce7136": {
+            "type": "icon-and-text",
+            "disabled": true,
+            "settings": {
+              "icon_text": "<p>Track Order<\/p>",
+              "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"48.128\" height=\"25.096\" viewbox=\"0 0 48.128 25.096\">\n  <g id=\"icon\" transform=\"translate(0.75 0.75)\">\n    <path id=\"Path_327556\" data-name=\"Path 327556\" d=\"M62.8,97.911H58.249a1.788,1.788,0,0,1-1.789-1.789V92.1\" transform=\"translate(-49.786 -78.752)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <path id=\"Path_327557\" data-name=\"Path 327557\" d=\"M56.46,59.346V56.6a2.1,2.1,0,0,1,2.1-2.1H80.529a2.1,2.1,0,0,1,2.1,2.1V71.561a2.1,2.1,0,0,1-2.1,2.1H70.567\" transform=\"translate(-49.786 -54.5)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <line id=\"Line_54391\" data-name=\"Line 54391\" x1=\"3.039\" transform=\"translate(32.84 19.159)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n    <path id=\"Path_327558\" data-name=\"Path 327558\" d=\"M130.17,61.93h8.264a1.879,1.879,0,0,1,1.608.909l3.646,6.056a1.852,1.852,0,0,1,.27.966v6.716a1.873,1.873,0,0,1-1.874,1.874h-.813\" transform=\"translate(-97.33 -59.292)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <path id=\"Path_327559\" data-name=\"Path 327559\" d=\"M138.73,102.562a3.972,3.972,0,1,1,3.972,3.972,3.972,3.972,0,0,1-3.972-3.972\" transform=\"translate(-102.851 -82.938)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <circle id=\"Ellipse_4609\" data-name=\"Ellipse 4609\" cx=\"3.972\" cy=\"3.972\" r=\"3.972\" transform=\"translate(12.982 15.652)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/circle>\n    <path id=\"Path_327560\" data-name=\"Path 327560\" d=\"M146.62,65.69v4.679a2.248,2.248,0,0,0,2.247,2.247h3.717\" transform=\"translate(-107.94 -61.718)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <line id=\"Line_54392\" data-name=\"Line 54392\" x2=\"14.434\" transform=\"translate(4.207 7.434)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n    <line id=\"Line_54393\" data-name=\"Line 54393\" x2=\"14.438\" transform=\"translate(0 10.707)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n  <\/g>\n<\/svg>",
+              "icon_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "0258191c-5bac-481d-a7d1-3bfe1247eeff": {
+            "type": "icon-and-text",
+            "settings": {
+              "icon_text": "<p>Contact Us<\/p>",
+              "icon_svg": "",
+              "icon_image": "shopify:\/\/shop_images\/whatsapp.webp",
+              "icon_link": "https:\/\/api.whatsapp.com\/send\/?phone=919015227230&text=Hey%21+I%27d+like+to+know+more+about+Open+Secret.&type=phone_number&app_absent=0"
+            }
+          }
+        },
+        "block_order": [
+          "9b421fff-fea3-45af-88c4-4205d71d20ca",
+          "9f0a872a-78c0-4060-88c4-eccff1edb3ca",
+          "51b0a7e5-8d04-46a7-b0ba-1f45b4ce7136",
+          "0258191c-5bac-481d-a7d1-3bfe1247eeff"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/Group_210290.png",
+          "logo_width": 90,
+          "logo_position": "top-center",
+          "menu": "main-menu",
+          "bottom_menu": "mobile-sidebar",
+          "top_menu": "sidebar-menu",
+          "menu_type_desktop": "dropdown",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "mobile_logo_position": "center",
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "e6138471-2673-4f8f-ba32-0925898578b6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Group_210290.png",
+              "image_width": 120,
+              "alignment": ""
+            }
+          },
+          "4e354543-945b-49d2-a421-c022bad6afb1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "About Us",
+              "menu": "about-us"
+            }
+          },
+          "023554ee-e47d-434e-927c-4183c1d04a6c": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Help",
+              "menu": "help"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "disabled": true,
+            "settings": {
+              "heading": "Shop All",
+              "menu": "shop-all"
+            }
+          },
+          "8d77d9ba-c29c-4599-bedb-13b3779227a6": {
+            "type": "link_list",
+            "disabled": true,
+            "settings": {
+              "heading": "Account",
+              "menu": "account"
+            }
+          }
+        },
+        "block_order": [
+          "e6138471-2673-4f8f-ba32-0925898578b6",
+          "4e354543-945b-49d2-a421-c022bad6afb1",
+          "023554ee-e47d-434e-927c-4183c1d04a6c",
+          "footer-0",
+          "8d77d9ba-c29c-4599-bedb-13b3779227a6"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "footer-menu": "footer-bottom",
+          "newsletter_enable": true,
+          "newsletter_heading": "<p><strong>Subscribe to our newsletter<\/strong><\/p>",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true,
+          "margin_top": 24,
+          "padding_top": 0,
+          "padding_bottom": 36
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo": "{{ shop.brand.logo }}",
+          "logo_max_width": 100,
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
+        "blocks": {
+          "17708e69-2156-4df6-8bf9-1c3af98e412a": {
+            "type": "usp_block",
+            "settings": {
+              "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" id=\"icon\" width=\"31.877\" height=\"23.596\" viewbox=\"0 0 31.877 23.596\">\n  <circle id=\"Ellipse_15889\" data-name=\"Ellipse 15889\" cx=\"1.027\" cy=\"1.027\" r=\"1.027\" transform=\"translate(23.885 14.635)\" fill=\"#3c3c3b\"><\/circle>\n  <circle id=\"Ellipse_15890\" data-name=\"Ellipse 15890\" cx=\"1.027\" cy=\"1.027\" r=\"1.027\" transform=\"translate(12.403 14.635)\" fill=\"#3c3c3b\"><\/circle>\n  <path id=\"Path_331675\" data-name=\"Path 331675\" d=\"M711.526,2175.571a3.286,3.286,0,1,0-2.86-3.259A3.082,3.082,0,0,0,711.526,2175.571Zm0-5.369a2.157,2.157,0,1,1-1.711,2.111A1.945,1.945,0,0,1,711.526,2170.2Z\" transform=\"translate(-692.355 -2156.651)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_331676\" data-name=\"Path 331676\" d=\"M439.715,1968.829l2.053,13.754a.622.622,0,0,0,.615.531.61.61,0,0,0,.093-.007.622.622,0,0,0,.524-.707l-1.961-13.139,22.671-3.385.2,1.311a.622.622,0,1,0,1.231-.184l-.287-1.926a.623.623,0,0,0-.245-.409.631.631,0,0,0-.462-.115l-23.9,3.569A.622.622,0,0,0,439.715,1968.829Z\" transform=\"translate(-439.708 -1964.547)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_331677\" data-name=\"Path 331677\" d=\"M514.992,2026.622l-24.091,1.92a.622.622,0,0,0-.571.67l1.156,14.508a.622.622,0,0,0,.62.573l.05,0a.622.622,0,0,0,.571-.67l-1.107-13.888,22.85-1.822.134,1.677a.622.622,0,0,0,1.241-.1l-.183-2.3A.624.624,0,0,0,514.992,2026.622Z\" transform=\"translate(-487.259 -2022.855)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_331678\" data-name=\"Path 331678\" d=\"M571.1,2091.951H546.935a.623.623,0,0,0-.622.623V2107.2a.623.623,0,0,0,.622.623H571.1a.623.623,0,0,0,.622-.623v-14.624A.623.623,0,0,0,571.1,2091.951Zm-.622,14.625H547.558V2093.2H570.48Z\" transform=\"translate(-539.848 -2084.224)\" fill=\"#3c3c3b\"><\/path>\n  <path id=\"Path_331679\" data-name=\"Path 331679\" d=\"M592.258,2139.933a1.474,1.474,0,0,1,1.472,1.472.622.622,0,0,0,.622.622h14.481a.623.623,0,0,0,.622-.623,1.474,1.474,0,0,1,1.472-1.472.623.623,0,0,0,.622-.622V2133.6a.622.622,0,0,0-.622-.622,1.474,1.474,0,0,1-1.472-1.472.622.622,0,0,0-.622-.622H594.353a.623.623,0,0,0-.622.622,1.474,1.474,0,0,1-1.472,1.472.623.623,0,0,0-.622.622v5.714A.623.623,0,0,0,592.258,2139.933Zm.622-5.786a2.726,2.726,0,0,0,2.022-2.022h13.381a2.726,2.726,0,0,0,2.022,2.022v4.613a2.726,2.726,0,0,0-2.022,2.022H594.9a2.726,2.726,0,0,0-2.022-2.022Z\" transform=\"translate(-582.422 -2120.792)\" fill=\"#3c3c3b\"><\/path>\n<\/svg>",
+              "text": "<p><strong>Secured <\/strong>Payments<\/p>"
+            }
+          },
+          "d56e0102-cc35-4a04-987c-b037342e5295": {
+            "type": "usp_block",
+            "settings": {
+              "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"48.128\" height=\"25.096\" viewbox=\"0 0 48.128 25.096\">\n  <g id=\"icon\" transform=\"translate(-36.91 -53.75)\">\n    <path id=\"Path_327556\" data-name=\"Path 327556\" d=\"M62.8,97.911H58.249a1.788,1.788,0,0,1-1.789-1.789V92.1\" transform=\"translate(-12.126 -24.252)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <path id=\"Path_327557\" data-name=\"Path 327557\" d=\"M56.46,59.346V56.6a2.1,2.1,0,0,1,2.1-2.1H80.529a2.1,2.1,0,0,1,2.1,2.1V71.561a2.1,2.1,0,0,1-2.1,2.1H70.567\" transform=\"translate(-12.126)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <line id=\"Line_54391\" data-name=\"Line 54391\" x1=\"3.039\" transform=\"translate(70.5 73.659)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n    <path id=\"Path_327558\" data-name=\"Path 327558\" d=\"M130.17,61.93h8.264a1.879,1.879,0,0,1,1.608.909l3.646,6.056a1.852,1.852,0,0,1,.27.966v6.716a1.873,1.873,0,0,1-1.874,1.874h-.813\" transform=\"translate(-59.67 -4.792)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <path id=\"Path_327559\" data-name=\"Path 327559\" d=\"M138.73,102.562a3.972,3.972,0,1,1,3.972,3.972,3.972,3.972,0,0,1-3.972-3.972\" transform=\"translate(-65.191 -28.438)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <circle id=\"Ellipse_4609\" data-name=\"Ellipse 4609\" cx=\"3.972\" cy=\"3.972\" r=\"3.972\" transform=\"translate(50.642 70.152)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/circle>\n    <path id=\"Path_327560\" data-name=\"Path 327560\" d=\"M146.62,65.69v4.679a2.248,2.248,0,0,0,2.247,2.247h3.717\" transform=\"translate(-70.28 -7.218)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/path>\n    <line id=\"Line_54392\" data-name=\"Line 54392\" x2=\"14.434\" transform=\"translate(41.867 61.934)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n    <line id=\"Line_54393\" data-name=\"Line 54393\" x2=\"14.438\" transform=\"translate(37.66 65.207)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><\/line>\n  <\/g>\n<\/svg>",
+              "text": "<p>COD<strong> Available<\/strong><\/p>"
+            }
+          },
+          "53701a6c-358a-4ea7-97dc-20e5d93ea804": {
+            "type": "usp_block",
+            "settings": {
+              "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"30.277\" height=\"23.424\" viewbox=\"0 0 30.277 23.424\">\n  <g id=\"icon\" transform=\"translate(0.5 0.5)\">\n    <g id=\"Group_215561\" data-name=\"Group 215561\">\n      <g id=\"Group_215560\" data-name=\"Group 215560\">\n        <path id=\"Path_331685\" data-name=\"Path 331685\" d=\"M75.39,72.684l11.109,5.9,11.09-5.9L86.191,67.5Z\" transform=\"translate(-75.39 -67.5)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n        <path id=\"Path_331686\" data-name=\"Path 331686\" d=\"M0,5.463V0\" transform=\"translate(22.198 5.184)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-width=\"1\"><\/path>\n        <path id=\"Path_331687\" data-name=\"Path 331687\" d=\"M83.18,97.336l6.219,3.617,4.229-2.416\" transform=\"translate(-78.296 -78.529)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n        <line id=\"Line_54999\" data-name=\"Line 54999\" x2=\"0.702\" y2=\"0.407\" transform=\"translate(2.307 17.309)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/line>\n        <path id=\"Path_331688\" data-name=\"Path 331688\" d=\"M75.39,75.77V86.553l1.116.646\" transform=\"translate(-75.39 -70.586)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n        <line id=\"Line_55000\" data-name=\"Line 55000\" x1=\"0.006\" y2=\"11.341\" transform=\"translate(11.102 11.084)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/line>\n      <\/g>\n      <line id=\"Line_55001\" data-name=\"Line 55001\" y1=\"5.586\" x2=\"10.776\" transform=\"translate(5.115 2.313)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/line>\n    <\/g>\n    <g id=\"Group_215562\" data-name=\"Group 215562\" transform=\"translate(15.111 7.095)\">\n      <circle id=\"Ellipse_15892\" data-name=\"Ellipse 15892\" cx=\"7.083\" cy=\"7.083\" r=\"7.083\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/circle>\n      <path id=\"Path_331689\" data-name=\"Path 331689\" d=\"M-3306.9-5055.558l1.626,2.184,5.367-4.266\" transform=\"translate(3311.216 5062.949)\" fill=\"none\" stroke=\"#3c3c3b\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1\"><\/path>\n    <\/g>\n  <\/g>\n<\/svg>",
+              "text": "<p>Delivery <strong>in 3-5 days<\/strong><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "17708e69-2156-4df6-8bf9-1c3af98e412a",
+          "d56e0102-cc35-4a04-987c-b037342e5295",
+          "53701a6c-358a-4ea7-97dc-20e5d93ea804"
+        ],
+        "settings": {
+          "Show_banner": false,
+          "cart_bannerURL": "",
+          "cart_bannerCampURL": "",
+          "cart_bannerCampCredURL": "",
+          "cart_bannerCampCredRewards": "shopify:\/\/shop_images\/Side_Cart_Banner_1.jpg",
+          "cart_bannerCampCredRewardsURL": "https:\/\/opensecret.in\/collections\/cred-rewards"
+        }
+      },
+      "marmeto-checkout-discounts": {
+        "type": "marmeto-checkout-discounts",
+        "blocks": {
+          "7c58f7df-4714-4d5e-a4c0-155919aac9bc": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "PP30",
+              "discount_title": "PP30",
+              "discount_subtitle": "Flat 30% off for PhonePe users",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "4fc5aa58-ac60-4417-be07-263639230892": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "EOJS15",
+              "discount_title": "EOJS15",
+              "discount_subtitle": "Get Flat 15% off on orders above ₹2499",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "1f371d3d-c406-45be-8aaf-859653b05aad": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "EOJS10",
+              "discount_title": "EOJS10",
+              "discount_subtitle": "Get Flat 10% off on orders above ₹1999",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "79a2fc73-d252-4770-bec1-6eb9cfe2721d": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "PP400",
+              "discount_title": "PP400",
+              "discount_subtitle": "Flat ₹400 Off on Premium Flavoured Nuts Combo",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "3222ca27-b388-4ee0-b74c-957c820729eb": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "PP500",
+              "discount_title": "PP500",
+              "discount_subtitle": "Flat ₹500 Off on Dry Fruits Combo",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "66c5fd1c-c74c-4e66-b14f-e1f6cb67581c": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "LOVE25",
+              "discount_title": "LOVE25",
+              "discount_subtitle": "Get Flat 25% off on Chocolates and Valentine Hampers",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "80365ab7-294f-47ea-8e25-feda1ca64263": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "EXTRA10",
+              "discount_title": "EXTRA10",
+              "discount_subtitle": "Get flat 10% off on all orders above ₹999",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "cbbf70f9-938d-4681-b223-1bcee6a776d7": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "EXTRA15",
+              "discount_title": "EXTRA15",
+              "discount_subtitle": "Get flat 15% off on all orders above ₹1499",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          },
+          "bbbd19f2-37e5-44f2-a77c-cce98bb907c6": {
+            "type": "discount-content",
+            "disabled": true,
+            "settings": {
+              "discount_code": "EXTRA25",
+              "discount_title": "EXTRA25",
+              "discount_subtitle": "Get flat 25% off on all orders above ₹2499",
+              "viewbtn_text": "",
+              "discount_details_title": "",
+              "discount_details": ""
+            }
+          }
+        },
+        "block_order": [
+          "7c58f7df-4714-4d5e-a4c0-155919aac9bc",
+          "4fc5aa58-ac60-4417-be07-263639230892",
+          "1f371d3d-c406-45be-8aaf-859653b05aad",
+          "79a2fc73-d252-4770-bec1-6eb9cfe2721d",
+          "3222ca27-b388-4ee0-b74c-957c820729eb",
+          "66c5fd1c-c74c-4e66-b14f-e1f6cb67581c",
+          "80365ab7-294f-47ea-8e25-feda1ca64263",
+          "cbbf70f9-938d-4681-b223-1bcee6a776d7",
+          "bbbd19f2-37e5-44f2-a77c-cce98bb907c6"
+        ],
+        "settings": {
+          "enable_section": true
+        }
+      },
+      "marmeto-coupon-block": {
+        "type": "marmeto-coupon-block",
+        "settings": {
+          "enable_section": false,
+          "heading": "",
+          "coupon-head": "",
+          "coupon-code": ""
+        }
+      }
+    },
+    "content_for_index": []
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#ffffff",
+      "colors_accent_1": "#121212",
+      "gradient_accent_1": "",
+      "colors_accent_2": "#334fb4",
+      "gradient_accent_2": "",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#ffffff",
+      "gradient_background_1": "",
+      "colors_background_2": "#f3f3f3",
+      "gradient_background_2": "",
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "background-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "background-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "background-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 0,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "accent-2",
+      "sold_out_badge_color_scheme": "inverse",
+      "accent_icons": "text",
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "text": "Welcome to our store",
+                "text_alignment": "center",
+                "color_scheme": "background-1",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "{{ shop.brand.logo }}",
+            "logo_width": 90,
+            "menu": "main-menu",
+            "enable_sticky_header": true,
+            "margin_bottom": 0,
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Quick links",
+                "menu": "footer"
+              }
+            },
+            "footer-1": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "text",
+              "settings": {
+                "heading": "Our mission",
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "color_scheme": "background-1",
+            "newsletter_enable": true,
+            "newsletter_heading": "<p>Subscribe to our emails<\/p>",
+            "show_social": true,
+            "enable_country_selector": false,
+            "enable_language_selector": false,
+            "payment_enable": true,
+            "margin_top": 48,
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "logo": "{{ shop.brand.logo }}",
+            "logo_max_width": 100,
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  }
+}

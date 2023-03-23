@@ -1,0 +1,262 @@
+{{ 'component-tabs.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-background {
+    background: linear-gradient(to top, {{section.settings.background }} 60%, transparent 0);
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+  }
+
+  .collection-tabs .product-card {
+    -webkit-box-shadow: 0px 33px 40px -25px {{section.settings.background | color_darken: 10 | color_desaturate: 30 }};
+    -moz-box-shadow: 0px 33px 40px -25px {{section.settings.background | color_darken: 10 | color_desaturate: 30 }};
+    box-shadow: 0px 33px 40px -25px {{section.settings.background | color_darken: 10 | color_desaturate: 30 }};
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+   @media screen and (max-width: 768px) {
+     .text-heading {
+       width:100%!important;
+       text-align:left!important;
+       padding:0px;
+     }
+   }
+{%- endstyle -%}
+
+
+<div class="collection-tabs section-{{ section.id }}-padding">
+  <div class="collection-tabs__wrapper section-{{ section.id }}-background">
+    <div class="page-width">
+      {%- unless section.settings.heading == blank -%}
+        <div class="title-wrapper center">
+          <h2 id="SectionHeading-{{ section.id }}" class="collection-tabs__title {{ section.settings.heading_size }}">
+             <h2 class="header-text">{{ section.settings.heading  }}</h2>
+          </h2>
+        </div>
+      {%- endunless -%}
+  
+      <div class="collection-tab__headings tab__headings">
+        {%- for block in section.blocks -%}
+          <div class="collection-tab__heading tab__heading h5 font-medium{% if forloop.first %} is--active font-black{% endif %}" data-blocktab= "tab-{{ block.settings.title | handleize }}-{{ forloop.index }}2"">
+            {{ block.settings.title }}
+          </div>
+        {%- endfor -%}
+      </div>
+  
+      <div class="collection-tab__contents tab__contents">
+          
+          {%- for block in section.blocks -%}
+          {% assign product_limit = block.settings.product_limit %}
+            
+          <div id="tab-{{ block.settings.title | handleize }}-{{ forloop.index }}2" class="collection-tab__content tab__content{% if forloop.first %} is--active{% endif %}">
+            <div class="collection-tabs__slider slider slider--mobile slider--desktop ">
+              {%- for product in block.settings.collection.products limit: product_limit -%}
+                {% unless product.tags contains 'search_hide' %}
+                <div class="collection-tabs__slideritem grid__item">
+                   {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    lazy_load: lazy_load,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id
+
+                  %}
+                </div>
+              {% endunless %}
+              {%- endfor -%}
+            
+            </div>
+          
+          </div>
+        {%- endfor -%}
+            </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+{% schema %}
+{
+  "name": "New Arrivals",
+  "class": "section",
+  "tag": "section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#E7F1FF"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Product Card"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
+      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab-content",
+      "name": "Tab content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Tab title"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "range",
+          "id": "product_limit",
+          "min": 3,
+          "max": 12,
+          "step": 1,
+          "label": "Product limit",
+          "default": 6
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Arrivals"
+    }
+  ]
+}
+{% endschema %}
+
+
+<script>
+ 
+  let block_tabs = document.querySelectorAll('[data-blocktab]')
+  block_tabs.forEach((header)=>{
+    header.addEventListener('click',()=>{
+        document.querySelectorAll('.collection-tab__content').forEach((tab)=>{
+            tab.classList.remove('is--active');
+        });
+        document.querySelector(`#${header.dataset.blocktab}`).classList.add('is--active');
+    })
+})
+
+let myheadings2 = document.querySelectorAll(".collection-tab__heading");
+myheadings2.forEach((headings2)=>{
+    headings2.addEventListener('click',()=>{
+        myheadings2.forEach((heading2)=>{ heading2.classList.remove('is--active');})
+            headings2.classList.add('is--active');
+    })
+})
+
+  
+</script>

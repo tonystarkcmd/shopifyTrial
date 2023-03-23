@@ -1,0 +1,159 @@
+<div class="customer-testimonials-section hp--categories_section customer-testimonials-section--{{ section.id }}"> 
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="customer-testimonials__heading center section_title">
+        {{ section.settings.heading }}
+      </H2>
+    {% endif %}
+    <div class="customer-testimonials__reviews-wrapper">
+      {% for block in section.blocks %}
+        <div class="customer-testimonials__review center">
+          <div class="customer-testimonials__review-bg">
+            <div class="customer-testimonials__rating h3 font-body-bold">
+              {{ block.settings.rating }}
+            </div>
+            <div class="customer-testimonials__stars">
+              {% assign full = rating | split: '.' | first | times: 1 %}
+              {% assign half = rating | times: 1.0 | minus: full | round %}
+              {% for i in (1..5) %}
+                {% if i <= full %}
+                  {% render 'review-full-star' %}
+                {% elsif half > 0 %}
+                  {% render 'review-half-star' %}
+                  {% assign half = 0 %}
+                {% else %}
+                  {% render 'review-empty-star' %}
+                {% endif %}
+              {% endfor %}
+            </div>
+            <div class="customer-testimonials__review-caption font-recoleta-b h3">
+              {{ block.settings.review_caption | strip_html }}
+            </div>
+            <div class="customer-testimonials__review-content font-smaller">
+              <span class="customer-testimonials__review-quote">{{ section.settings.quote }}</span>
+              {{ block.settings.review_content | strip_html }}
+            </div>
+            <div class="customer-testimonials__customer-image">
+                <img data-src="{{ block.settings.customer_image | img_url: "50x50" }}" alt="{{ block.settings.customer_name | append: " photo"}}" class="lazy">
+            </div>
+            <div class="customer-testimonials__customer-name font-small">
+              {{ block.settings.customer_name }}
+            </div>
+            <div class="customer-testimonials__customer-caption font-smaller">
+              {{ block.settings.customer_caption }}
+            </div>
+          </div>
+        </div>
+      {% else %}
+        {% for i in (0..4) %}
+          {% assign rating = "3.5" %}
+          <div class="customer-testimonials__review center">
+          <div class="customer-testimonials__review-bg">
+            <div class="customer-testimonials__rating h3 font-body-bold">
+              {{ rating }}
+            </div>
+            <div class="customer-testimonials__stars">
+              {% assign full = rating | split: '.' | first | times: 1 %}
+              {% assign half = rating | times: 1.0 | minus: full | round %}
+            {% for i in (1..5) %}
+              {% if i <= full %}
+                {% render 'review-full-star' %}
+              {% elsif half > 0 %}
+                {% render 'review-half-star' %}
+                {% assign half = 0 %}
+              {% else %}
+                {% render 'review-empty-star' %}
+              {% endif %}
+            {% endfor %}
+            </div>
+            <div class="customer-testimonials__review-caption font-recoleta-b h3">
+              It was Amazing!
+            </div>
+            <div class="customer-testimonials__review-content font-smaller">
+              <span class="customer-testimonials__review-quote">{{ section.settings.quote }}</span>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            </div>
+            <div class="customer-testimonials__customer-image">
+              <img src="{{ block.settings.customer_image | img_url }}" alt="{{ block.settings.customer_name | append: " photo"}}">
+            </div>
+            <div class="customer-testimonials__customer-name font-small">
+              Customer Name
+            </div>
+            <div class="customer-testimonials__customer-caption font-smaller">
+              Customer Title
+            </div>
+          </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Customer Testimonials",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Customer Testimonials"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "html",
+        "id": "quote",
+        "label": "Quote Image SVG"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Review",
+        "type": "review",
+        "limit": 10,
+        "settings": [
+          {
+            "type": "text",
+            "id": "rating",
+            "label": "Rating",
+            "default": "4.2",
+             "info": "Rating between 0 to 5 with One decimal place"
+          },
+          {
+            "type": "richtext",
+            "id": "review_caption",
+            "label": "Review Caption"
+          },
+          {
+            "type": "richtext",
+            "id": "review_content",
+            "label": "Review Content"
+          },
+          {
+            "type": "image_picker",
+            "id": "customer_image",
+            "label": "Customer Image"
+           },
+           {
+             "type": "text",
+             "id": "customer_name",
+             "label": "Customer Name"
+           },
+           {
+             "type": "text",
+             "id": "customer_caption",
+             "label": "Customer Caption"
+           }
+        ]
+      }
+    ],
+    "presets":[
+        {
+          "name": "Customer Testimonials"
+        }
+    ]
+  }
+{% endschema %}

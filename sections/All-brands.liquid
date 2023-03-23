@@ -1,0 +1,40 @@
+ <div class="brands-page-container">
+    {% for block in section.blocks %}
+      <div class="brands_container">
+        <a href="{{ block.settings.brand_link }}">
+          <div class="brands_logo">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="" />           
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "All Brands",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "brand",
+        "name": "Brand",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "brand_link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Brands List"
+      }
+    ]
+  }
+{% endschema %}

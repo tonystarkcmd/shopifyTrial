@@ -1,0 +1,514 @@
+{% if customer %}
+  <script>
+  location.href = "/account";
+    </script>
+  {% endif %}
+{% assign login_sub_title = section.settings.login_sub_title %}
+{% if login_sub_title == blank %}
+{% assign login_sub_title = "Enter your log in Credentials" %}
+{% endif %}
+{% assign login_title = section.settings.login_title %}
+{% if login_title == blank %}
+{% assign login_title = "Login with OTP" %}
+{% endif %}
+{% assign account_title = section.settings.account_title %}
+{% if account_title == blank %}
+{% assign account_title = "Account Details" %}
+{% endif %}
+{% assign otp_title = section.settings.otp_title %}
+{% if otp_title == blank %}
+{% assign otp_title = "Enter OTP" %}
+{% endif %}
+{% assign phone_placeholder = section.settings.phone_placeholder %}
+{% if phone_placeholder == blank %}
+{% assign phone_placeholder = "Phone number" %}
+{% endif %}
+{% assign email_placeholder = section.settings.email_placeholder %}
+{% if email_placeholder == blank %}
+{% assign email_placeholder = "Email id" %}
+{% endif %}
+{% assign whatsapp_placeholder = section.settings.whatsapp_placeholder %}
+{% if whatsapp_placeholder == blank %}
+{% assign whatsapp_placeholder = "Whatsapp number" %}
+{% endif %}
+{% assign marketing_text = section.settings.marketing_text %}
+{% if marketing_text == blank %}
+{% assign marketing_text = "keep me updated on new updates, exclusive offers, periodical blogs, and everything else on." %}
+{% endif %}
+
+{% assign default_country_selected = 'in' %}
+{% assign phone_enable = section.settings.phone_enable %}
+{% assign email_enable = section.settings.email_enable %}
+{% assign whatsapp_enable = section.settings.whatsapp_enable %}
+{% assign phone_enable = true %}
+{% assign email_enable = true %}
+{% assign whatsapp_enable = true %}
+{% if phone_enable == false and email_enable == false and whatsapp_enable == false %}
+{% assign phone_enable = true %}
+{% assign email_enable = true %}
+{% assign whatsapp_enable = true %}
+{% endif %}
+{% assign marketing_options = shop.metafields["simply-otp-login"].marketing_option.value %}
+<style>
+  .otp-btn{
+    background-color: {% if section.settings.btn_bg_color %}{{section.settings.btn_bg_color}}{% else %}#1E418E{% endif %};
+  }
+  .otp-btn{
+    color: {% if section.settings.btn_text_color %}{{section.settings.btn_text_color}}{% else %}#FFFFFF{% endif %};
+  }
+  .otp-btn path{
+    stroke: {% if section.settings.btn_text_color %}{{section.settings.btn_text_color}}{% else %}#FFFFFF{% endif %};
+  }
+</style>
+
+{% capture country_html %}
+<div class="country-selector-main">
+  <div class="selected-country">
+    <div class="country-flag-box">
+      <span class="country-flag {{default_country_selected}}"></span>
+    </div>
+  </div>
+  <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+<ul class="country-selector-list" aria-label="List of countries">
+  <li class="{% if default_country_selected == 'in' %}active{% endif %}" data-dial-code="91" data-country-code="in">
+    <div class="country-flag-box">
+      <div class="country-flag in"></div>
+    </div>
+    <span class="country-name">India</span>
+    <span class="dial-code">+91</span>
+  </li>
+</ul>
+{% endcapture %}
+
+{% assign count = 0 %}
+{% assign active_otp_type = '' %}
+{% capture otp_type_html %}
+<div class="login-inputBox">
+  {% if phone_enable %}
+  {% if count == 0 %}
+  {% assign active_otp_type = 'mobile' %}
+  {% endif %}
+  <div class="input-box-content mobile-no-inner{% if count == 0 %} active{% endif %}" data-current="mobile">
+    {{ country_html }}
+    <span class="login-label">Enter Mobile Number</span>
+    <input class="olInput user-name-input" placeholder="{{phone_placeholder}}" maxlength="10" name="phone" type="number"/>
+  </div>
+  {% assign count = count | plus: 1 %}
+  {% endif %}
+  {% if email_enable %}
+  {% if count == 0 %}
+  {% assign active_otp_type = 'email' %}
+  {% endif %}
+  <div class="input-box-content email-inner{% if count == 0 %} active{% endif %}" data-current="email">
+    <span class="login-label ">Enter Email</span>
+    <input class="olInput user-name-input" placeholder="{{email_placeholder}}" maxlength="" name="email" type="email"/>
+  </div>
+  {% assign count = count | plus: 1 %}
+  {% endif %}
+  {% if whatsapp_enable %}
+  {% if count == 0 %}
+  {% assign active_otp_type = 'whatsapp' %}
+  {% endif %}
+  <div class="input-box-content whatsapp-no-inner{% if count == 0 %} active{% endif %}" data-current="whatsapp">
+    <span class="login-label ">Enter Whatsapp Number</span>
+    {{ country_html }}
+    <input class="olInput user-name-input" placeholder="{{whatsapp_placeholder}}" maxlength="10" name="whatsapp" type="number"/>
+  </div>
+  {% assign count = count | plus: 1 %}
+  {% endif %}
+</div>
+{% endcapture %}
+
+{% assign marketing_count = 0 %}
+{% capture marketing_options_html %}
+{% if email_enable %}
+<div class="update-checkbox">
+  <input class="input-checkbox" type="checkbox" value="1" checked="checked" name="" id="email-marketing" />
+  <label class="checkbox-label" for="email-marketing">Email</label>
+</div>
+{% assign marketing_count = marketing_count | plus: 1 %}
+{% endif %}
+{% if phone_enable %}
+<div class="update-checkbox">
+  <input class="input-checkbox" type="checkbox" value="1" checked="checked" name="" id="phone-marketing" />
+  <label class="checkbox-label" for="phone-marketing">Phone</label>
+</div>
+{% assign marketing_count = marketing_count | plus: 1 %}
+{% endif %}
+{% if whatsapp_enable %}
+<div class="update-checkbox">
+  <input class="input-checkbox" type="checkbox" value="1" checked="checked" name="" id="whatsapp-marketing" />
+  <label class="checkbox-label" for="whatsapp-marketing">Whatsapp</label>
+</div>
+{% assign marketing_count = marketing_count | plus: 1 %}
+{% endif %}
+{% endcapture %}
+
+<div class="simply-otp-wrapper" style="--otp-login-btn-color:{% if section.settings.btn_bg_color %}{{section.settings.btn_bg_color}}{% else %}#1E418E{% endif %}">
+  <div class="olWrapper" data-selected-country="{{default_country_selected}}">
+    <div class="ol">
+      <script>
+        window.myFirebaseApi = "{{ shop.metafields.simply-otp-login.firebase_config }}";
+      </script>
+      <div id="recaptcha-container"></div>
+      <input type="hidden" class="olInput myShopifyDomain"  name="myShopifyDomain" value="{{ shop.permanent_domain }}">
+      {% if section.settings.image_enabled %}
+      <div class="login-img">
+        {% if section.settings.image != blank %}
+        <img src={{ section.settings.image | img_url: 'small' }} alt="login"/>
+        {% else %}
+        <img src="https://cdn.shopify.com/s/files/1/0589/1751/9521/files/Login-rafiki_1.png?v=1651486937" alt="login"/>
+        {% endif %}
+      </div>
+      {% endif %}
+      <div class="login-box step-box-wrapper" data-active="{{active_otp_type}}">
+        <h1 class="login-header">{{ login_title }}</h1>
+        <p class="login-description">
+          {{ login_sub_title }}
+        </p>
+        {{ otp_type_html }}
+        <button class="send-btn otp-btn">
+          <span>Continue</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        {% if count > 1 %}
+        <div class="other-options-box">
+          <p class="other-options-p"><span>Or Login Using</span></p>
+          <div class="other-options-wrap">
+            {% if email_enable %}
+            <div class="other-option-inner email-inner" data-current="email">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.50016 1.1665H13.8335C14.6127 1.1665 15.2502 1.804 15.2502 2.58317V11.0832C15.2502 11.8623 14.6127 12.4998 13.8335 12.4998H2.50016C1.721 12.4998 1.0835 11.8623 1.0835 11.0832V2.58317C1.0835 1.804 1.721 1.1665 2.50016 1.1665Z" stroke="#4A4A4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.2502 2.58301L8.16683 7.54134L1.0835 2.58301" stroke="#4A4A4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p class="text-wrap">
+                Email
+              </p>
+            </div>
+            {% endif %}
+            {% if whatsapp_enable %}
+            <div class="other-option-inner whatsapp-no-inner" data-current="whatsapp">
+              <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.12292 4.39376C5.26072 4.39745 5.41349 4.4049 5.55885 4.72755C5.65523 4.94233 5.8176 5.33775 5.94986 5.65985C6.05278 5.9105 6.13748 6.11675 6.15867 6.15897C6.2071 6.25537 6.23691 6.36661 6.17358 6.49638C6.16611 6.51169 6.15906 6.52633 6.15226 6.54042C6.10146 6.64586 6.0653 6.7209 5.97986 6.81902C5.94473 6.85935 5.90813 6.90357 5.87167 6.94763C5.80755 7.02512 5.74383 7.10211 5.68922 7.1565C5.59237 7.25284 5.49173 7.35676 5.6035 7.54957C5.71533 7.74238 6.10653 8.37652 6.68403 8.88828C7.30489 9.44102 7.84477 9.67395 8.11767 9.7917C8.17066 9.81456 8.21358 9.83308 8.24507 9.84876C8.43885 9.94516 8.55433 9.93032 8.66609 9.80055C8.77792 9.67072 9.15044 9.23684 9.28089 9.04403C9.40756 8.85122 9.53794 8.88089 9.71681 8.94762C9.89562 9.01435 10.8494 9.4816 11.0431 9.57801C11.0814 9.59707 11.1172 9.61425 11.1504 9.63017C11.2852 9.69481 11.3769 9.73875 11.4157 9.80425C11.4641 9.88581 11.4641 10.2715 11.304 10.7239C11.1401 11.1763 10.3502 11.6102 9.99248 11.6436C9.95861 11.6468 9.92491 11.6508 9.89023 11.655C9.56245 11.6947 9.14634 11.745 7.66387 11.1615C5.83715 10.4431 4.63131 8.66086 4.38752 8.30053C4.36827 8.27208 4.35502 8.25249 4.34793 8.24299L4.34381 8.23747C4.23289 8.08906 3.55433 7.18109 3.55433 6.24429C3.55433 5.348 3.99585 4.88137 4.19724 4.66853C4.21 4.65504 4.2218 4.64257 4.23246 4.63108C4.41127 4.43827 4.61995 4.39007 4.75033 4.39007C4.88078 4.39007 5.01116 4.39007 5.12292 4.39376Z" fill="#4A4A4A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0753723 15.0598C0.0137505 15.2835 0.217474 15.4899 0.441954 15.4313L3.91205 14.5249C5.00742 15.1182 6.24066 15.4334 7.49629 15.4334H7.5C11.6319 15.4334 15 12.0848 15 7.9686C15 5.97352 14.2212 4.09708 12.8055 2.68788C11.3897 1.27875 9.50816 0.5 7.49994 0.5C3.36814 0.5 4.77741e-07 3.84862 4.77741e-07 7.9649C-0.000469058 9.27439 0.345173 10.561 1.00223 11.6954L0.0753723 15.0598ZM2.0914 11.9955C2.17185 11.7035 2.13166 11.3914 1.97985 11.1292C1.42239 10.1667 1.12935 9.07517 1.12975 7.9649C1.12975 4.47791 3.98671 1.62975 7.49994 1.62975C9.20955 1.62975 10.8045 2.29027 12.0085 3.48861C13.2111 4.68562 13.8702 6.27386 13.8702 7.9686C13.8702 11.4555 11.0133 14.3037 7.5 14.3037H7.49629C6.42941 14.3037 5.38102 14.0358 4.45013 13.5315C4.19818 13.3951 3.90378 13.3594 3.62654 13.4318L1.54599 13.9753L2.0914 11.9955Z" fill="#4A4A4A"/>
+              </svg>
+              <p class="text-wrap">
+                Whatsapp
+              </p>
+            </div>
+            {% endif %}
+            {% if phone_enable %}
+            <div class="other-option-inner mobile-no-inner" data-current="mobile">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 202.592 202.592" style="enable-background:new 0 0 202.592 202.592;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path style="fill:#010002;" d="M198.048,160.105l-31.286-31.29c-6.231-6.206-16.552-6.016-23.001,0.433l-15.761,15.761
+                                                   c-0.995-0.551-2.026-1.124-3.11-1.732c-9.953-5.515-23.577-13.074-37.914-27.421C72.599,101.48,65.03,87.834,59.5,77.874
+                                                   c-0.587-1.056-1.145-2.072-1.696-3.038l10.579-10.565l5.2-5.207c6.46-6.46,6.639-16.778,0.419-23.001L42.715,4.769
+                                                   c-6.216-6.216-16.541-6.027-23.001,0.433l-8.818,8.868l0.243,0.24c-2.956,3.772-5.429,8.124-7.265,12.816
+                                                   c-1.696,4.466-2.752,8.729-3.235,12.998c-4.13,34.25,11.52,65.55,53.994,108.028c58.711,58.707,106.027,54.273,108.067,54.055
+                                                   c4.449-0.53,8.707-1.593,13.038-3.275c4.652-1.818,9.001-4.284,12.769-7.233l0.193,0.168l8.933-8.747
+                                                   C204.079,176.661,204.265,166.343,198.048,160.105z M190.683,176.164l-3.937,3.93l-1.568,1.507
+                                                   c-2.469,2.387-6.743,5.74-12.984,8.181c-3.543,1.364-7.036,2.24-10.59,2.663c-0.447,0.043-44.95,3.84-100.029-51.235
+                                                   C14.743,94.38,7.238,67.395,10.384,41.259c0.394-3.464,1.263-6.95,2.652-10.593c2.462-6.277,5.812-10.547,8.181-13.02l5.443-5.497
+                                                   c2.623-2.63,6.714-2.831,9.112-0.433l31.286,31.286c2.394,2.401,2.205,6.492-0.422,9.13L45.507,73.24l1.95,3.282
+                                                   c1.084,1.829,2.23,3.879,3.454,6.106c5.812,10.482,13.764,24.83,29.121,40.173c15.317,15.325,29.644,23.27,40.094,29.067
+                                                   c2.258,1.249,4.32,2.398,6.17,3.5l3.289,1.95l21.115-21.122c2.634-2.623,6.739-2.817,9.137-0.426l31.272,31.279
+                                                   C193.5,169.446,193.31,173.537,190.683,176.164z"/>
+                  </g>
+                </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+              </svg>
+              <p class="text-wrap">
+                Phone
+              </p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+        <div class="center">
+<!--           <span>Dont have a Account? </span>
+          <a href="{{ routes.account_register_url }}" class="create_account">
+            {{ 'customer.login_page.create_account' | t }}
+          </a> -->
+        </div>
+      </div>
+
+      <div class="update-user-box step-box-wrapper hide">
+        <h1 class="login-header">{{ account_title }}</h1>
+        <div class="login-inputBox">
+          <div class="input-box-content">
+            <input id="first-name" class="olInput update-user-first-name-input" maxlength="" name="name" type="text">
+            <label for="first-name" class="input__label">First Name</label>
+          </div>
+        </div>
+        <div class="login-inputBox">
+          <div class="input-box-content">
+            <input id="last-name" class="olInput update-user-last-name-input" maxlength="" name="name" type="text">
+            <label for="last-name" class="input__label">Last Name</label>
+          </div>
+        </div>
+        <div class="login-inputBox">
+          <div class="input-box-content">
+            <input id="email-id" class="olInput update-user-email-input" maxlength="" name="email" type="email" required>
+            <label for="email-id" class="input__label">Email</label>
+          </div>
+        </div>
+        <span class="error-message hide">Please enter a valid email</span>
+        <div class="login-inputBox">
+          <div class="input-box-content">
+            <input id="phone-number" class="olInput update-user-phone-input" maxlength="10" size="10" name="phone_no" type="text">
+            <label for="phone-number" class="input__label">Phone Number</label>
+          </div>
+        </div>
+        <span class="error-message-phone hide">Please enter a valid Phone Number</span>
+        <input class="otp-id" name="otp_id" type="hidden">
+        {% if marketing_count != 0 %}
+        <div class="update-checkbox-wrapper">
+          <p class="checkbox-main-label">{{ marketing_text }}</p>
+          {{ marketing_options_html }}
+        </div>
+        {% endif %}
+        <div class="button-wrapper">
+          <button class="send-btn update-btn otp-btn">
+            <span>Update</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          {% comment %}
+          {% if section.settings.show_skip_btn %}
+          <span class="span-text skip-btn">
+            Skip now
+          </span>
+          {% endif %}
+          {% endcomment %}
+        </div>
+      </div>
+
+      <div class="verify-box step-box-wrapper hide">
+        <h3>{{ otp_title }}</h3>
+        <p class="verify-box-details">The verification OTP is sent on <span>Mobile number</span></p>
+        <div class="mn-container">
+          <p class="mn" id="mn">+91 999999999</p>
+          <svg class="edit-phone bi bi-pencil-fill" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+          </svg>
+        </div>
+        <input class="verify-otp-id" name="olOtpId" type="hidden">
+        <input class="phoneNo" name="phoneNo" type="hidden">
+        <div class="verify-content">
+          <input type="tel" id="otp-input-main" autocomplete="one-time-code" class="otp-input otp6" maxlength="6" />
+        </div>
+        <button class="verify-btn otp-btn">
+          <span>Verify OTP</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="resend-otp" id="resend-otp">
+          <p>Didn't Receive the OTP?</p>
+          <a class="resend-btn disabled">Resend OTP</a>
+          <p class="count-down-otp"></p>
+        </div>
+      </div>
+    </div>
+    <div class="loader">
+      <div class="loader-innerDiv"></div>
+    </div>
+  </div>
+</div>
+<div id="otp-original-login" style="display:none">
+  {%- form 'customer_login', name: 'login', class: 'form' -%}
+  <input type="email" id="otp-original-email" name="customer[email]">
+  <input type="password" id="otp-original-password" name="customer[password]">
+  <input type="hidden" name="return_to" id="otp-return_to">
+  <button type="submit" id="otp-original-submit">Login</button>
+  {%- endform -%}
+</div>
+
+
+
+<style>
+  .simply-otp-wrapper {
+    display: none;
+  }
+</style>
+<script>
+  
+  window.simplyOtp = window.simplyOtp || {};
+  simplyOtp.cartJson = {{ cart | json }};
+  let olWrapper = document.querySelector('.olWrapper');
+  // window.simplyOtp.pageUrl = location.href;
+
+  
+  {% if customer  %}
+    
+  {% endif  %}
+  olWrapper.style.display = "none"; /* you have to first diplay none to olWrapper because in case css is not attached then whole style is distrubed */
+  /* Load css */
+  var cssId = 'myCss';  // you could encode the css path itself to generate id..
+  if (!document.getElementById(cssId)) {
+    var head = document.getElementsByTagName('head')[0];
+    var link = document.createElement('link');
+    link.id = cssId;
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = "{{'otp-login.css' | asset_url}}";
+    link.media = 'all';
+    head.appendChild(link);
+    document.querySelector('.simply-otp-wrapper').style['display'] = "block";
+  }
+  if (Shopify.designMode) {
+    document.addEventListener("shopify:section:load", () => {
+                              document.querySelector('.simply-otp-wrapper').style['display'] = "block";
+    let olWrapperDiv = document.querySelector('.olWrapper'); // Parent element
+    if (olWrapperDiv) { // To check css is available in the DOM or not
+      olWrapperDiv.style.display = "flex"; //If available then change olWrapper display property
+    }
+  });
+  }
+</script>
+<script src="{{'otp-login.js' | asset_url}}" type="text/javascript" defer="defer"></script>
+{% schema %}
+  {
+    "name": "Simply OTP",
+      "tag": "section",
+        "class": "section",
+          "settings": [
+            {
+              "type": "checkbox",
+              "id": "image_enabled",
+              "label": "Enable Image",
+              "default" : true
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "color",
+              "id": "btn_bg_color",
+              "label": "Button background color",
+              "default":"#1E418E"
+            },
+            {
+              "type": "color",
+              "id": "btn_text_color",
+              "label": "Button text color",
+              "default":"#ffffff"
+            },
+            {
+              "type":"header",
+              "content":"Login step"
+            },
+            {
+              "type":"checkbox",
+              "id":"phone_enable",
+              "label":"Enable phone field",
+              "default":true
+            },
+            {
+              "type":"checkbox",
+              "id":"email_enable",
+              "label":"Enable email field",
+              "default":true
+            },
+            {
+              "type":"checkbox",
+              "id":"whatsapp_enable",
+              "label":"Enable whatsapp field",
+              "default":true
+            },
+            {
+              "type":"text",
+              "id":"login_title",
+              "label":"Title",
+              "default":"Login with OTP"
+            },
+            {
+              "type":"text",
+              "id":"login_sub_title",
+              "label":"Sub title",
+              "default":"Enter your log in Credentials"
+            },
+            {
+              "type":"text",
+              "id":"phone_placeholder",
+              "label":"Phone placeholder",
+              "default":"Phone number"
+            },
+            {
+              "type":"text",
+              "id":"email_placeholder",
+              "label":"Email placeholder",
+              "default":"Email id"
+            },
+            {
+              "type":"text",
+              "id":"whatsapp_placeholder",
+              "label":"Whatsapp placeholder",
+              "default":"Whatsapp number"
+            },
+            {
+              "type":"header",
+              "content":"Enter OTP step"
+            },
+            {
+              "type":"text",
+              "id":"otp_title",
+              "label":"Title",
+              "default":"Enter OTP"
+            },
+            {
+              "type":"header",
+              "content":"Account step"
+            },
+            {
+              "type":"checkbox",
+              "id":"sms_offer_enable",
+              "label":"Enable sms marketing",
+              "default":true
+            },
+            {
+              "type":"checkbox",
+              "id":"email_offer_enable",
+              "label":"Enable email marketing",
+              "default":true
+            },
+            {
+              "type":"checkbox",
+              "id":"whatsapp_offer_enable",
+              "label":"Enable whatsapp marketing",
+              "default":true
+            },
+            {
+              "type":"text",
+              "id":"account_title",
+              "label":"Title",
+              "default":"Account Details"
+            },
+            {
+              "type":"text",
+              "id":"marketing_text",
+              "label":"Marketing option text",
+              "default":"keep me updated on new updates, exclusive offers, periodical blogs, and everything else on."
+            }
+          ],
+            "presets": [
+              {
+                "name": "Simply OTP"
+              }
+            ]
+  }
+{% endschema %}

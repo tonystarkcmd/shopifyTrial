@@ -1,0 +1,92 @@
+{%- style -%}
+  .product--collection-card_wrapper{
+    background-color : {{ section.settings.background-color }};
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="product--collection-card_wrapper small-hide section-{{ section.id }}-padding">
+  <div class="product--category-grid">
+    {% for block in section.blocks %}
+    <a href="{{ block.settings.button_link }}" class="collection--main-container">
+      <div class="product--category-grid-item__image">
+         <img src="{{ block.settings.image | img_url: 'master' }}" class="product--collection_image" loading="lazy">
+      </div>
+      <div class="product--collection_title">
+        {{ block.settings.text }}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product page collections",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background-color",
+      "label": "Bg color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label":"image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label":"Collection Title"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Collection link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product page collections"
+    }
+  ]
+}
+{% endschema %}

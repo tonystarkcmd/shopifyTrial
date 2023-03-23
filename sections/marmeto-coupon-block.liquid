@@ -1,0 +1,64 @@
+{%- if section.settings.enable_section -%}
+  <div class="coupon-code--container">
+    <div class="coupon-code-title">
+      {% if section.settings.heading != null %}
+        <div class="coupon-code-heading">{{ section.settings.heading }}</div>
+      {% endif %}
+    </div>
+    <div class="coupon-contents">
+      {% if section.settings.coupon-head != null %}
+        <div class="coupon-use">{{ section.settings.coupon-head }}</div>
+      {% endif %}
+      {% if section.settings.coupon-code != null %}
+        <div class="coupon-code" data-coupon-code="{{ section.settings.coupon-code | strip_html }}">{{ section.settings.coupon-code }}</div>
+        <span class=" coupon-code copied-text" style="display:none;"> Copied!</span>
+      {% endif %}
+    </div>
+  </div>
+  <script>
+    $(document).on('page:load page:change', function() {
+      $(".coupon-code--container").insertAfter('.marmeto-discounts'); 
+      let copyBtn = document.querySelector('.coupon-code');
+      let copyText = document.querySelector('.copied-text');
+      copyBtn.addEventListener('click', function (e) {
+      let offerCode = this.getAttribute('data-coupon-code');
+        navigator.clipboard.writeText(offerCode);
+        copyText.style.display="block";
+        copyBtn.style.display="none";
+        setTimeout(function () {
+          copyText.style.display="none";
+          copyBtn.style.display="block";
+        }, 1500);
+      });
+    }); 
+  </script>
+{% endif %}
+{% schema %}
+  {
+    "name": "Marmeto Coupen",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_section",
+        "label": "Enable checkout discounts",
+		"default": false
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Coupon heading"
+      },
+      {
+        "type": "richtext",
+        "id": "coupon-head",
+        "label": "Coupon use text",
+        "default":"<p>USE COUPON CODE</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "coupon-code",
+        "label": "Coupon Code"
+      }
+    ]
+  }
+{% endschema %}

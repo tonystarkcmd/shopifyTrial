@@ -1,0 +1,34 @@
+<div class="coupon-code--container">
+  <div class="coupon-code-title">
+    {% if block.settings.heading != null %}
+      <div class="coupon-code-heading">{{ block.settings.heading }}</div>
+    {% endif %}
+    {% if block.settings.subheading != null %}
+      <div class="coupon-code-subheading">{{ block.settings.subheading }}</div>
+    {% endif %}
+  </div>
+  <div class="coupon-contents">
+    {% if block.settings.coupon-head != null %}
+      <div class="coupon-use">{{ block.settings.coupon-head }}</div>
+    {% endif %}
+    {% if block.settings.coupon-code != null %}
+      <div class="coupon-code" data-coupon-code="{{ block.settings.coupon-code | strip_html }}">{{ block.settings.coupon-code }}</div>
+      <span class=" coupon-code copied-text" style="display:none;"> Copied!</span>
+    {% endif %}
+  </div>
+</div>
+<script>
+  let copyBtn = document.querySelector('.coupon-code');
+  let copyText = document.querySelector('.copied-text');
+  copyBtn.addEventListener('click', function (e) {
+  let offerCode = this.getAttribute('data-coupon-code');
+    navigator.clipboard.writeText(offerCode);
+    copyText.style.display="block";
+    copyBtn.style.display="none";
+    setTimeout(function () {
+      copyText.style.display="none";
+      copyBtn.style.display="block";
+    }, 1500);
+  });
+  
+</script>

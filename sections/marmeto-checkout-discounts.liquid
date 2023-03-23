@@ -1,0 +1,204 @@
+{%- if section.settings.enable_section and section.blocks.size > 0 -%}
+    {% unless customer and customer.tags contains 'old_member' %}
+      <div class="marmeto-discounts">
+    	<details class="fieldset marmeto-discount__cards">
+          <summary class="marmeto_discounts_heading">
+            <span class="svg-and-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                <g id="Group_215265" data-name="Group 215265" transform="translate(-42 -248)">
+                  <path id="Path_331487" data-name="Path 331487" d="M1541.444,1139.613a.643.643,0,0,1,0,.91l-.859.859a.644.644,0,0,1-.91-.91l.859-.859A.643.643,0,0,1,1541.444,1139.613Zm0-4.294a.643.643,0,0,1,0,.91l-5.152,5.152a.644.644,0,0,1-.91-.91l5.152-5.153A.643.643,0,0,1,1541.444,1135.32Zm-4.294,0a.643.643,0,0,1,0,.91l-.859.859a.644.644,0,0,1-.91-.91l.859-.859A.644.644,0,0,1,1537.15,1135.32Zm2.078-5.329a1.074,1.074,0,0,0-1.631,0l-.438.512a2.361,2.361,0,0,1-2.344.762l-.656-.157a1.074,1.074,0,0,0-1.32.959l-.053.672a2.363,2.363,0,0,1-1.449,1.994l-.623.259a1.073,1.073,0,0,0-.5,1.552l.352.575a2.361,2.361,0,0,1,0,2.465l-.352.575a1.074,1.074,0,0,0,.5,1.552l.623.258a2.363,2.363,0,0,1,1.449,1.994l.053.672a1.074,1.074,0,0,0,1.32.959l.656-.157a2.363,2.363,0,0,1,2.344.762l.438.513a1.074,1.074,0,0,0,1.631,0l.438-.513a2.362,2.362,0,0,1,2.344-.762l.656.157a1.074,1.074,0,0,0,1.32-.959l.053-.672a2.362,2.362,0,0,1,1.449-1.994l.623-.258a1.073,1.073,0,0,0,.5-1.552l-.351-.575a2.361,2.361,0,0,1,0-2.465l.351-.575a1.073,1.073,0,0,0-.5-1.552l-.623-.259a2.362,2.362,0,0,1-1.449-1.994l-.053-.672a1.074,1.074,0,0,0-1.32-.959l-.656.157a2.36,2.36,0,0,1-2.344-.762Zm-2.61-.838a2.362,2.362,0,0,1,3.589,0l.438.513a1.072,1.072,0,0,0,1.066.346l.656-.156a2.361,2.361,0,0,1,2.9,2.109l.053.672a1.075,1.075,0,0,0,.659.907l.624.259a2.362,2.362,0,0,1,1.109,3.414l-.352.575a1.072,1.072,0,0,0,0,1.12l.352.575a2.362,2.362,0,0,1-1.109,3.414l-.624.259a1.075,1.075,0,0,0-.659.907l-.053.672a2.361,2.361,0,0,1-2.9,2.109l-.656-.156a1.072,1.072,0,0,0-1.066.346l-.438.513a2.362,2.362,0,0,1-3.589,0l-.438-.513a1.072,1.072,0,0,0-1.066-.346l-.656.156a2.361,2.361,0,0,1-2.9-2.109l-.053-.672a1.076,1.076,0,0,0-.659-.907l-.624-.259a2.361,2.361,0,0,1-1.109-3.414l.352-.575a1.073,1.073,0,0,0,0-1.12l-.352-.575a2.361,2.361,0,0,1,1.109-3.414l.624-.259a1.076,1.076,0,0,0,.659-.907l.053-.672a2.361,2.361,0,0,1,2.9-2.109l.656.156a1.072,1.072,0,0,0,1.066-.346Z" transform="translate(-1477.413 -871.351)" fill="#000" fill-rule="evenodd"/>
+                </g>
+              </svg>
+              <span class="marmeto-discount-head">Available Coupons</span>
+            </span>
+            <svg class="rotate-arrow" style="height:10px;width:10px;margin-right:10px;" aria-hidden="true" focusable="false"> <use xlink:href="#chevron-right"></use> </svg>      
+          </summary>
+          <div class="js-discount-card--container">
+          {%- for block in section.blocks -%}
+          	{%- if block.settings.discount_code != blank and block.settings.discount_title != blank -%}
+              <div class="field js-discount-card {{ block.settings.discount_code | handleize }}" {{ block.attributes }}>
+                <div class="marmeto-discount__card">
+                  <div class="marmeto-discount__card-header">
+                    <div class="marmeto-discount__card-title">
+                      {{ block.settings.discount_title }}
+                      <button type="button" class="marmeto-discount__applybtn js-discount-apply" data-discount-code="{{ block.settings.discount_code }}">
+                        Apply               
+                      </button>
+                    </div>
+    
+                    {%- if block.settings.discount_subtitle != blank -%}
+                      <div class="marmeto-discount__card-subtitle small-text">
+                        {{ block.settings.discount_subtitle }}
+                      </div>
+                    {%- endif -%}
+    
+                    <div class="marmeto-discount__card-flex">
+                      {% if block.settings.viewbtn_text != blank %}
+                        <button type="button" class="marmeto-discount__togglebtn js-open-accordion">
+                          {{ block.settings.viewbtn_text | default: 'View details' }}
+                        </button>
+                      {% endif %}
+                      
+                    </div>
+                  </div>
+                
+                  <div class="marmeto-discount__card-content js-accordion-content">
+                    {%- if block.settings.discount_details_title != blank -%}
+                      <div class="marmeto-discount__card-contenttitle">
+                        {{ block.settings.discount_details_title }}
+                      </div>
+                    {%- endif -%}
+    
+                    {%- if block.settings.discount_details != blank -%}
+                      <div class="marmeto-discount__card-contentdetails">
+                        {{ block.settings.discount_details }}
+                      </div>
+                    {%- endif -%}
+    
+                    <button type="button" class="marmeto-discount__togglebtn js-close-accordion">
+                      Hide details
+                    </button>
+                  </div>
+                </div>
+              </div>
+          	{%- endif -%}
+          {%- endfor -%}
+          </div>
+        </details>
+      </div>
+    
+      <script>
+    	$(document).on('page:load page:change', function() {
+      // Below 2 line is at checkout liquid
+            // $(".marmeto-discounts").insertAfter('.order-summary__section--discount'); 
+            // $(".coupon-code--container").insertAfter('.marmeto-discounts'); 
+          // (function hideCouponsIfAutoApplied() {
+          //     if ($('[data-product-id="7275304157370"]').length) {
+          //       $('.marmeto-discounts').hide();
+          //       $('.order-summary__section--discount').hide();
+          //     }
+          // })()
+    
+          function handleize(string) {
+            return string.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+          }
+          
+          function checkDiscountApplied(){
+            $('.tags-list .tag').each(function(){
+              var discountCode = $(this).find(".reduction-code__text").text();
+              discountCode = handleize(discountCode); 
+              
+              $('.' + discountCode).addClass('discount-applied');
+              $('.' + discountCode).find('.js-discount-apply').html('Applied').addClass('is-disabled');
+              setTimeout(function(){
+              $('.marmeto-discount__cards').removeAttr('open');
+              },800);
+            });
+          }
+          
+          if($('.tags-list .tag').length){
+            checkDiscountApplied();
+          }
+          
+          $('.tags-list .tag__wrapper .tag__button').on('click', function(e) {
+            e.preventDefault();    
+            var formTag = $(this).closest('form');
+            var tagUrl = $(formTag).attr("action");
+    
+            $('[data-reduction-form] button[type="submit"]').addClass("btn--loading");
+            $.ajax({
+              url: tagUrl,
+              type: 'post',
+              data: formTag.serialize(),
+              success: function(response) {
+                location.reload();
+              }
+            })
+          });
+        });
+        
+        //Open accordion details
+        $(document).on('click', '.js-open-accordion', function(evt) {
+          evt.preventDefault();
+    
+          $(this).hide();
+          $(this).parents('.js-discount-card').find('.js-accordion-content').slideToggle();
+        });
+        
+        //Close accordion details
+        $(document).on('click', '.js-close-accordion', function(evt) {
+          evt.preventDefault();
+          
+          $(this).parents('.js-discount-card').find('.js-accordion-content').slideToggle();
+          $(this).parents('.js-discount-card').find('.js-open-accordion').show();
+        });
+        
+        //Discount apply button
+        $(document).on('click', '.js-discount-apply', function(){
+          $('.js-discount-card').removeClass('discount-applied');
+          $('.js-discount-apply').html('Apply').removeClass('is-disabled');
+          var discountCode = $(this).attr('data-discount-code');
+          $('[name="checkout[reduction_code]"]').val(discountCode);
+          $('[name="checkout[reduction_code]"]').closest('form').submit();
+        });
+      </script>
+      {% endunless %}
+{%- endif -%}
+
+
+
+{% schema %}
+  {
+    "name": "Marmeto - Discount Codes",
+    "settings": [
+	  {
+        "type": "checkbox",
+        "id": "enable_section",
+        "label": "Enable checkout discounts",
+		"default": true
+      }
+	],
+	"blocks": [
+	  {
+        "type": "discount-content",
+        "name": "Discount content",
+        "settings": [
+		  {
+            "type": "text",
+            "id": "discount_code",
+            "label": "Discount code"
+          },
+		  {
+            "type": "text",
+            "id": "discount_title",
+            "label": "Discount title",
+			"info": "Eg: CODE - 10% off"
+          },
+		  {
+            "type": "text",
+            "id": "discount_subtitle",
+            "label": "Discount subtitle",
+			"info": "Eg: 10% off on all products"
+          },
+		  {
+            "type": "text",
+            "id": "viewbtn_text",
+            "label": "Button text",
+			"default": "View details"
+          },
+		  {
+			"type": "text",
+            "id": "discount_details_title",
+            "label": "Discount details title",
+			"default":"Terms and Conditions"
+		  },
+		  {
+            "type": "html",
+            "id": "discount_details",
+            "label": "Discount details"
+          }
+		]
+	  }
+	]
+  }
+{% endschema %}

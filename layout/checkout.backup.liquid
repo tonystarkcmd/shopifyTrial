@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>{% include 'moe.liquid' %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0"
+    >
+    <meta name="referrer" content="origin">
+    <link rel="preconnect" href="https://strn.rise-ai.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=a2f15c59"></script>
+    <title>{{ page_title }}</title>
+
+    {% comment %}{{ content_for_header }}{% endcomment %}
+ {{ content_for_header | replace: '974281006276497', '' }}
+
+    {{ checkout_stylesheets }}
+    {{ 'checkout.css' | asset_url | stylesheet_tag }}
+    {{ checkout_scripts }}
+    <script>
+        window.$ = Checkout.$;
+
+      $(document).on('page:load page:change', function() {
+
+        //to enable save address button
+        $('[name="checkout[remember_me]"]').click();
+
+        // for lucky orange checkout insights
+        // $('[id="continue_button"]').addClass("lucky-orange-" + $(".breadcrumb__item--current").find("span").text())
+        $('[id="continue_button"]').addClass("lucky-orange-" + $(".step").data("step"));
+
+        //re-arranging fields in checkout
+        $("[data-address-field=city]").removeClass("field--third");
+        $("[data-address-field=country]").addClass("field--third");
+        $("[data-address-field=country]").insertAfter("[data-address-field=city]")
+
+        //changing svg of return
+        // $( '<svg class="mycheckoutsvg icon-svg icon-svg--color-accent icon-svg--size-10 previous-link__icon" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z" fill-rule="nonzero"/></svg>').insertBefore( ".step__footer__previous-link-content" );
+        // $(".step__footer__previous-link [role=img]").hide();
+        $(".step__footer__previous-link").hide();
+
+        //change color of shipping
+        $("input[type=radio]:checked").closest(".content-box__row").find(".content-box__emphasis").css("color", "#F18400");
+
+        $("fieldset").change(function() {
+          $("input[type=radio]").closest(".content-box__row").find(".content-box__emphasis").css("color", "black");
+          $("input[type=radio]:checked").closest(".content-box__row").find(".content-box__emphasis").css("color", "#F18400");
+        });
+        {% if customer.tags contains 'new_member' or customer.tags contains 'old_member' %}
+        // open membership modal
+        if(!sessionStorage.getItem('closePop')){
+          $(".mm-menbership-discount").removeClass("hidden");
+          $(".full-page-overlay_wrap").removeClass("hidden");
+        }
+        {% endif %}
+
+        // close memebership modal
+        $(".close__modal").click(function() {
+          sessionStorage.setItem('closePop', 'true');
+          $(".mm-menbership-discount").addClass("hidden");
+          $(".full-page-overlay_wrap").addClass("hidden");
+        });
+      });
+    </script>
+  
+  {% include "trackify_x" %}
+</head>
+  <body>
+    {{ skip_to_content_link }}
+
+    {% if page_title contains 'Information' %}
+      <div class="full-page-overlay_wrap hidden"></div>
+    {% endif %}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        <!-- {{ content_for_logo }} -->
+      </div>
+    </header>
+
+    {%- capture t_content -%}{{ order_summary_toggle }}{%- endcapture -%}
+    {{-
+      t_content
+      | replace: '<span class="order-summary-toggle__icon-wrapper">',
+        '<span class="order-summary-toggle__icon-wrapper"> <svg id="Group_210385" data-name="Group 210385" xmlns="http://www.w3.org/2000/svg" width="16" height="17.6" viewBox="0 0 16 17.6"><path id="Path_2324" data-name="Path 2324" d="M126,534a4,4,0,0,1,8,0h1.6a2.4,2.4,0,0,1,2.4,2.4v7.2a4,4,0,0,1-4,4h-8a4,4,0,0,1-4-4v-7.2a2.4,2.4,0,0,1,2.4-2.4Zm1.6,0a2.4,2.4,0,1,1,4.8,0Zm-1.6,1.6V538a.8.8,0,1,0,1.6,0v-2.4h4.8V538a.8.8,0,1,0,1.6,0v-2.4h1.6a.8.8,0,0,1,.8.8v7.2A2.4,2.4,0,0,1,134,546h-8a2.4,2.4,0,0,1-2.4-2.4v-7.2a.8.8,0,0,1,.8-.8Z" transform="translate(-122 -530)" fill="#191c1f" fill-rule="evenodd"/></svg>'
+    -}}
+
+    <!--
+      <span class="wrap marmeto-message-container"><span class="marmeto-message">{{ settings.checkout-message }}</span></span>
+    -->
+
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            <!-- {{ content_for_logo }} -->
+            {{ % breadcrumb % }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {%- capture h_content -%}{{ content_for_layout }}{%- endcapture -%}
+            {{-
+              h_content
+              | replace: 'Continue to shipping', 'Save Address And Continue'
+              | replace: 'Continue to payment', 'Proceed To Payment'
+              | replace: 'Gift card or discount code', 'Coupon code'
+              | replace: 'Coupon code', 'Offers & Coupons'
+            -}}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            <!-- {{ content_for_logo }} -->
+          </div>
+          <div class="sidebar__content">
+            {{
+              content_for_order_summary
+              | replace: '<div class="order-summary__sections">',
+                '<div class="order-summary-section"><svg id="Group_210385" data-name="Group 210385" xmlns="http://www.w3.org/2000/svg" width="16" height="17.6" viewBox="0 0 16 17.6"><path id="Path_2324" data-name="Path 2324" d="M126,534a4,4,0,0,1,8,0h1.6a2.4,2.4,0,0,1,2.4,2.4v7.2a4,4,0,0,1-4,4h-8a4,4,0,0,1-4-4v-7.2a2.4,2.4,0,0,1,2.4-2.4Zm1.6,0a2.4,2.4,0,1,1,4.8,0Zm-1.6,1.6V538a.8.8,0,1,0,1.6,0v-2.4h4.8V538a.8.8,0,1,0,1.6,0v-2.4h1.6a.8.8,0,0,1,.8.8v7.2A2.4,2.4,0,0,1,134,546h-8a2.4,2.4,0,0,1-2.4-2.4v-7.2a.8.8,0,0,1,.8-.8Z" transform="translate(-122 -530)" fill="#191c1f" fill-rule="evenodd"/></svg> <span class="order-summary-text">Order Summary</span></div><div class="order-summary__sections">'
+              | replace: '<div class="order-summary__section order-summary__section--discount" data-reduction-form="update">',
+                '<div class="order-summary__section order-summary__section--discount" data-reduction-form="update"> <div class="offers-and-coupons">Apply Coupon</div>'
+              | replace: '<div class="order-summary__section order-summary__section--total-lines" data-order-summary-section="payment-lines">',
+                '<div class="order-summary__section order-summary__section--total-lines" data-order-summary-section="payment-lines"> <div class="payment-summary-title">Payment <b>Summary</b></div>'
+              | replace: 'Gift card or discount code', 'Enter Coupon code'
+            }}
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {% if page_title contains 'Payment' %}
+      <script>
+        $("#payment-gateway-subfields-76333842618").hide();
+      </script>
+    {% endif %}
+    {{ tracking_code }}
+    {% if page_title contains 'Information' %}
+      {% render 'mm-membership-discount' %}
+    {% endif %}
+    {% section 'marmeto-checkout-discounts' %}
+    {% section 'marmeto-coupon-block' %}
+
+    <script>
+      Checkout.$(document).on('ready page:load page:change', function() {
+        document.querySelector('.sidebar').appendChild(document.querySelector('.order-summary__section--discount'));
+        $(".marmeto-discounts").insertAfter('.order-summary__section--discount');
+        $(".coupon-code--container").insertAfter('.marmeto-discounts');
+        const moveRise = setInterval(()=>{
+          if (document.querySelector('.Rise__quick-apply')){
+            if(!document.querySelector('.rise-loader')){
+              const para = document.createElement("div");
+              para.classList.add('rise-loader');
+              document.querySelector('.Rise__quick-apply').appendChild(para);
+            }
+            if (document.querySelector('.marmeto-discounts')){
+             // $('.Rise__quick-apply').insertAfter('.marmeto-discounts');
+            } else {
+             // $('.Rise__quick-apply').insertAfter('.order-summary__section--discount');
+            }
+            clearInterval(moveRise);
+          }
+        },1000)
+      });
+    </script>
+    {% comment %} If customer is old customer don't show discount {% endcomment %}
+
+    {% unless customer.tags contains 'old_member' and customer %}
+      <script>
+        Checkout.$(document).on('ready page:load page:change', function() {
+          $( ".order-summary-toggle" ).append( $( ".marmeto-message-container" ) );
+          $("#checkout_reduction_code_mobile").attr("placeholder", "Coupon Code");
+          if(Checkout.$('.offerCashback-point').length == 0){
+           Checkout.$('.total-line-table__tbody').append('<tr class="offerCashback-point"><th>Get upto <b>20%</b> as cashback points</th><td><span class="order-summary__emphasis"></span></td></tr>')
+          }
+
+          {% if page_title contains "Information" %}
+            // Checkout.$('.order-summary-toggle').removeClass('order-summary-toggle--hide').addClass('order-summary-toggle--show').attr('aria-expanded','true');
+            // Checkout.$('#order-summary').removeClass('order-summary--is-collapsed').addClass('order-summary--is-expanded');
+          {% endif %}
+        })
+      </script>
+      <style>
+        .offerCashback-point td {  text-align: right; padding-top: 0.5rem;}
+        .offerCashback-point th {padding-top: 0.75em;}
+      </style>
+    {% else %}
+      <style>
+        .marmeto-message{
+          display:none !important;
+        }
+        .order-summary__section~.order-summary__section {
+          border-top: unset;
+        }
+      </style>
+    {% endunless %}
+
+    <script>
+      window.RiseStoreFront={customer_id:"{{ customer.id }}"};
+    </script>
+    <script src="https://str.rise-ai.com/checkout?shop=open-secret-store.myshopify.com" defer></script>
+    <style>
+            {% unless customer and customer.tags contains 'new_member'  %}
+              .Rise__quick-apply {
+                display: none;
+              }
+            {% endunless %}
+            {% if customer and customer.tags contains 'old_member' %}
+              .order-summary__section--discount{
+                display:none;
+              }
+            {% endif %}
+            {% if page_title contains "Thank_you" %}
+            .Rise__quick-apply {
+                display: none;
+              }
+            {% endif %}
+
+            /* Show option to apply discount at only one place */
+             .section--reductions.hidden-on-desktop{
+                display:none !important;
+             }
+
+            .marmeto-message{
+               display:none;
+            }
+            @media(max-width:1000px){
+              .marmeto-message{
+                display: block;
+                color: black;
+                font-family: inter;
+                font-weight: 600;
+                margin: 0 auto;
+                max-width: 40em;
+                zoom: 1;
+                width: 100%;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                font-size: 12px;
+                margin-top: -25px;
+                padding-left: 15px;
+              }
+              details summary::-webkit-details-marker {
+                display:none;
+              }
+            }
+            .Rise__quick-apply:has(iframe[style*="display: none"]) {
+              display: none;
+            }
+
+            .Rise__quick-apply {
+                margin: 10px;
+                height: 5rem;
+                position: relative;
+              }
+              .Rise__quick-apply iframe {
+               position: absolute;
+                z-index: 2;
+                background: white;
+              }
+            .rise-loader {
+                border: 4px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 4px solid rgb(2, 50, 70);
+                width: 20px;
+                height: 20px;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 2s linear infinite;
+                position: absolute;
+                top: 2.5rem;
+                left: 45%;
+                z-index: 1;
+              }
+
+              /* Safari */
+              @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+              }
+
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+
+      /*       -------TW Styles */
+                  .field__message--error-plus-dynamic{
+              color:red;
+              margin-left: 10px !important;
+              font-weight: 500;
+            }
+            .TW_number{
+          width: 59px;
+          display: flex;
+          align-items: center;
+          background: #f0f0f0;
+          font-weight: 600;
+          justify-content: center;
+                  border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+              border-top: 1px solid #e1e1e1;
+          border-bottom: 1px solid #e1e1e1;
+          border-left: 1px solid #e1e1e1;
+      }
+            .field__input-wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: row-reverse;
+      }
+            .floating-labels .field__input-wrapper--icon-right .field__label {
+          width: 91%;
+      }
+            .field__input-wrapper--icon-right .field__input {
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+      }
+            @media (max-width:640px){
+              .floating-labels .field__input-wrapper--icon-right .field__label {
+          width: 86%;
+      }
+            }
+    </style>
+
+    <script>
+      (function($) {
+
+      $(document).on('page:load page:change', function() {
+          $( '[name="checkout[shipping_address][phone]"]:not([tabindex="-1"])' ).parent().append( "<p class='TW_number'>+91</p>" );
+          $( '[name="checkout[billing_address][phone]"]:not([tabindex="-1"])' ).parent().append( "<p class='TW_number'>+91</p>" );
+
+      var $phoneField;
+
+      var errorClass = 'field--error-plus-dynamic';
+
+      var errorMessageSelector = '.field__message--error-plus-dynamic';
+
+      // Check input for character limit and remove letters
+
+      var validatePhoneNumber = function(phoneField) {
+
+      var minChars = 10;
+
+      var maxChars = 10;
+
+      var errorMessage = "Please enter a valid 10-digit phone number";
+
+      var numbers = phoneField.val().match(/(\d)/g) || [];
+
+      var numbersLength = numbers.length;
+
+
+
+      // Only allow + and numbers
+
+      var allowedChars = phoneField.val().match(/(\d|\+)/g) || [];
+
+      var phoneFieldVal = phoneField.val;
+        var mtyu= $('[name="checkout[shipping_address][phone]"]:not([tabindex="-1"])');
+        if (mtyu.length > 0){
+            $phoneField = $('[name="checkout[shipping_address][phone]"]:not([tabindex="-1"])');
+          console.log("$phoneField if",$phoneField);
+        }
+        else{
+          $phoneField = $('[name="checkout[billing_address][phone]"]:not([tabindex="-1"])');
+          console.log("$phoneField else",$phoneField);
+        }
+
+
+      phoneFormatValidated = false;
+
+      // Remove automatic formatting triggers
+
+      $phoneField.removeAttr('data-phone-formatter data-phone-formatter-country-select');
+
+      // Set maxium size
+
+      $phoneField.attr('maxlength', 10);
+
+      // Remove non-allowed characters from phone number
+
+      phoneField.val(allowedChars.join(''));
+
+      if (numbersLength !== 0 && numbersLength < minChars || numbersLength > maxChars) {
+
+      // Not enough characters, show error on input.
+
+      if (!phoneField.hasClass(errorClass)) {
+
+      phoneField.addClass(errorClass);
+
+      phoneField.closest('[data-address-field]').after("<p class='field__message field__message--error-plus-dynamic'>"+ errorMessage +"</p>");
+
+      }
+
+      return false;
+
+      } else {
+
+      // Phone number is valid. Remove errors and continue.
+
+      phoneField.removeClass(errorClass);
+
+      phoneField.closest('[data-address-field]').nextAll(errorMessageSelector).remove();
+
+      return true;
+
+      }
+
+      }
+
+      if (Shopify.Checkout.step === 'contact_information') {
+
+      // var $phoneField = $('[name="checkout[shipping_address][phone]"]:not([aria-hidden="true"])');
+           var mtyu= $('[name="checkout[shipping_address][phone]"]:not([tabindex="-1"])');
+        if (mtyu.length > 0){
+            $phoneField = $('[name="checkout[shipping_address][phone]"]:not([tabindex="-1"])');
+          // console.log("$phoneField if",$phoneField);
+        }
+        else{
+          $phoneField = $('[name="checkout[billing_address][phone]"]:not([tabindex="-1"])');
+          // console.log("$phoneField else",$phoneField);
+        }
+
+      // Check for enter keypress on form and click button instead.
+
+      $('[data-step] form').on('keypress', function(e) {
+
+      if (event.keyCode === 10) {
+
+      e.preventDefault();
+
+      $(this).find('[type="submit"]').trigger('click');
+
+      }
+
+      });
+
+      // Handle form submit by validating button click.
+
+      $('[data-step] form [type="submit"]').on('click', function(e) {
+
+      e.preventDefault();
+
+      if (validatePhoneNumber($phoneField)) {
+
+      $('[data-step] form').trigger('submit');
+
+      }
+
+      });
+
+      // Validate phone number when modified
+
+      $phoneField.on('input', function() {
+
+      validatePhoneNumber($(this));
+
+      });
+
+      }
+
+      });
+
+      })(Checkout.$);
+
+// tech wishes Changes in marmeto coupon code ---------------
+  $(document).ready(function(){
+        let val = sessionStorage.getItem("lastname");
+        console.log("pleasehoe ja",val);
+
+    if (val == 'https://opensecret.in/products/dry-fruits-combo?utm_source=Partner&utm_medium=PhonePe&utm_campaign=PP699'){
+    let TWtemp =`
+    <div class="field js-discount-card pp699">
+                <div class="marmeto-discount__card">
+                  <div class="marmeto-discount__card-header">
+                    <div class="marmeto-discount__card-title">
+                      PP699
+                      <button type="button" class="marmeto-discount__applybtn js-discount-apply" data-discount-code="PP699">
+                        Apply               
+                      </button>
+                    </div><div class="marmeto-discount__card-subtitle small-text">
+                        Get Flat Rs. 699 off
+                      </div><div class="marmeto-discount__card-flex">
+                      
+                      
+                    </div>
+                  </div>
+                
+                  <div class="marmeto-discount__card-content js-accordion-content"><button type="button" class="marmeto-discount__togglebtn js-close-accordion">
+                      Hide details
+                    </button>
+                  </div>
+                </div>
+              </div>
+    `
+    $('.js-discount-card--container').html(TWtemp);
+}
+    else if (val == 'https://opensecret.in/collections/use-code-credos30-for-a-flat-30-off?utm_source=Partners&utm_medium=CRED%20Pay&utm_campaign=CREDOS30'){
+      let Twtemp2 = `
+      <div class="field js-discount-card credos30">
+                <div class="marmeto-discount__card">
+                  <div class="marmeto-discount__card-header">
+                    <div class="marmeto-discount__card-title">
+                      CREDOS30
+                      <button type="button" class="marmeto-discount__applybtn js-discount-apply" data-discount-code="CREDOS30">
+                        Apply               
+                      </button>
+                    </div><div class="marmeto-discount__card-subtitle small-text">
+                        Get Flat 30% off
+                      </div><div class="marmeto-discount__card-flex">
+                      
+                      
+                    </div>
+                  </div>
+                
+                  <div class="marmeto-discount__card-content js-accordion-content"><button type="button" class="marmeto-discount__togglebtn js-close-accordion">
+                      Hide details
+                    </button>
+                  </div>
+                </div>
+              </div>`
+      $('.js-discount-card--container').html(Twtemp2);
+    }
+    else {
+      console.log("Going to orginal (marmeto code)");
+    }
+
+    // setTimeout(sessionStorage.clear(), 3000);
+      });
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<div class="hp--platforms_section hp--brands_list">
+  <div class="page-width">
+    <div class="platforms_section-wrapper">
+      <h2 class="section_title">{{ section.settings.section_title }}</h2>
+    
+      <div class="platforms_block">
+        {% for block in section.blocks %}
+          <div class="platforms_container">
+            <a href="{{ block.settings.category_link }}">
+              <img src="{{ block.settings.image | img_url: '50x' }}" alt="{{ section.settings.section_title }}" loading="lazy"/>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Homepage Other Platforms",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "section_title",
+      "label": "Section Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "platform",
+      "name": "Platform",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "platform_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage Other Platforms"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

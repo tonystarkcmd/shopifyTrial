@@ -1,0 +1,1154 @@
+{
+  "sections": {
+    "1c09075d-d8df-4cea-a890-ab6691d1c975": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15969277968570__1c09075d-d8df-4cea-a890-ab6691d1c975-1668450286584ad2a0-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1920x620px_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/600x600_px_1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/code-gudipadwa20",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        },
+        "4abdece8-93bc-4a8e-abe2-6dbbb656e875": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AOV_Banner-Extra25_fdcb4ce8-eb66-4483-b476-c37ca4e74f28.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/AOV-Mobile-Extra25_950456c3-84cd-46ed-bbf7-3c2807e93bcf.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/value-combos",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        },
+        "e467f26d-0e67-4c7f-a5a0-e244e39e5261": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_8.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Mob.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/juices-drinks",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        },
+        "5de1c95f-4469-41c3-af30-89f3055bbeea": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Homepage_Desktop_7.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Homepage_Mob.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/ramzaan",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        },
+        "template--15969277968570__1c09075d-d8df-4cea-a890-ab6691d1c975-1668450286584ad2a0-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_desktop_6.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Homepage_mobile_4.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/as-seen-on-shark-tank",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15969277968570__1c09075d-d8df-4cea-a890-ab6691d1c975-1668450286584ad2a0-1",
+        "4abdece8-93bc-4a8e-abe2-6dbbb656e875",
+        "e467f26d-0e67-4c7f-a5a0-e244e39e5261",
+        "5de1c95f-4469-41c3-af30-89f3055bbeea",
+        "template--15969277968570__1c09075d-d8df-4cea-a890-ab6691d1c975-1668450286584ad2a0-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "2e5c83bb-759f-4d9c-9fc0-9861ca6e16be": {
+      "type": "hp--category-section",
+      "blocks": {
+        "44f9078f-f44a-4e4a-8f02-f01183470260": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gourmet_Gifting_Generic.jpg",
+            "category_title": "<p>Gourmet Gifting<\/p>",
+            "category_link": "shopify:\/\/collections\/gourmet-gifts"
+          }
+        },
+        "8a5769d9-94fe-4308-8d84-1d5ba4c380ba": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Value_Combos_2.jpg",
+            "category_title": "<p>Value Combos <\/p>",
+            "category_link": "shopify:\/\/collections\/value-combos"
+          }
+        },
+        "70964ea2-c077-461f-baeb-a229e59ac401": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_Launches_2_463d3ff8-dd5e-4153-a9f0-0c848a8dc1fd.jpg",
+            "category_title": "<p>New Launches<\/p>",
+            "category_link": "shopify:\/\/collections\/new-launches-1"
+          }
+        },
+        "822a9fd4-51a0-4685-9169-c09dfa27fd6c": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Protein_Tile.jpg",
+            "category_title": "<p>Protein Rich<\/p>",
+            "category_link": "shopify:\/\/collections\/protein-rich"
+          }
+        },
+        "2480368c-f7f3-4157-a349-2cb165d830ad": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Weight_Loss.jpg",
+            "category_title": "<p>Weight Loss<\/p>",
+            "category_link": "shopify:\/\/collections\/weight-management"
+          }
+        },
+        "649dd326-102c-49ae-ab1a-99daea30833e": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dry_Fruits___Nuts_a787e952-e7a2-429e-af78-df17ab9ae8ab.jpg",
+            "category_title": "<p>Dry Fruits & Nuts <\/p>",
+            "category_link": "shopify:\/\/collections\/dry-fruits-nuts"
+          }
+        },
+        "2fe1ca7c-5836-4802-936a-45f171e644a0": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Oil___Ghee.jpg",
+            "category_title": "<p>Oil, Ghee & More<\/p>",
+            "category_link": "shopify:\/\/collections\/oil-atta-more"
+          }
+        },
+        "5d3f4635-8170-4143-88ca-3656b7470830": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tea___Coffee.jpg",
+            "category_title": "<p>Tea & Coffee<\/p>",
+            "category_link": "shopify:\/\/collections\/tea-coffee"
+          }
+        },
+        "1607e33a-0851-4e71-9491-a64978a4bf1a": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Biscuits___Cookies.jpg",
+            "category_title": "<p>Biscuits & Cookies <\/p>",
+            "category_link": "shopify:\/\/collections\/biscuits-cookies"
+          }
+        },
+        "3be4a23c-8405-4ddb-84b4-fa21a70f47bd": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chocolates___Mithai.jpg",
+            "category_title": "<p>Chocolates & Mithai <\/p>",
+            "category_link": "shopify:\/\/collections\/chocolates-mithai"
+          }
+        },
+        "6db8397c-dfb4-4870-8dcc-0f696b8de46d": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chips___Snacks.jpg",
+            "category_title": "<p>Chips & Snacks <\/p>",
+            "category_link": "shopify:\/\/collections\/chips-snacks"
+          }
+        },
+        "1f60ab29-9e51-49d5-b822-74156a020034": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Namkeen.jpg",
+            "category_title": "<p>Namkeen <\/p>",
+            "category_link": "shopify:\/\/collections\/namkeen"
+          }
+        },
+        "ed2e3f2e-56aa-4eb1-a84e-ee8178fa118a": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cereals___Muesli.jpg",
+            "category_title": "<p>Cereals & Muesli<\/p>",
+            "category_link": "shopify:\/\/collections\/cereals-muesli"
+          }
+        },
+        "d94a4aa4-1d8c-40c4-a4a8-97550ae94519": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jams___Spreads.jpg",
+            "category_title": "<p>Jams & Spreads<\/p>",
+            "category_link": "shopify:\/\/collections\/jams-spreads"
+          }
+        },
+        "9de79a65-48aa-4b5d-8f5f-ac48f5de57db": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cold_Drinks___Juices.jpg",
+            "category_title": "<p>Juices & Cold Drinks<\/p>",
+            "category_link": "shopify:\/\/collections\/juices-drinks"
+          }
+        },
+        "29b0fcb7-a18e-4156-bba7-af416e78c0c9": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Instant_Food.jpg",
+            "category_title": "<p>Instant Foods<\/p>",
+            "category_link": "shopify:\/\/collections\/instant-foods"
+          }
+        },
+        "02d10030-35e9-4cb7-a50f-dfd2e2e6a010": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dips___Sauces.jpg",
+            "category_title": "<p>Dips & Sauces<\/p>",
+            "category_link": "shopify:\/\/collections\/dips-sauces-1"
+          }
+        }
+      },
+      "block_order": [
+        "44f9078f-f44a-4e4a-8f02-f01183470260",
+        "8a5769d9-94fe-4308-8d84-1d5ba4c380ba",
+        "70964ea2-c077-461f-baeb-a229e59ac401",
+        "822a9fd4-51a0-4685-9169-c09dfa27fd6c",
+        "2480368c-f7f3-4157-a349-2cb165d830ad",
+        "649dd326-102c-49ae-ab1a-99daea30833e",
+        "2fe1ca7c-5836-4802-936a-45f171e644a0",
+        "5d3f4635-8170-4143-88ca-3656b7470830",
+        "1607e33a-0851-4e71-9491-a64978a4bf1a",
+        "3be4a23c-8405-4ddb-84b4-fa21a70f47bd",
+        "6db8397c-dfb4-4870-8dcc-0f696b8de46d",
+        "1f60ab29-9e51-49d5-b822-74156a020034",
+        "ed2e3f2e-56aa-4eb1-a84e-ee8178fa118a",
+        "d94a4aa4-1d8c-40c4-a4a8-97550ae94519",
+        "9de79a65-48aa-4b5d-8f5f-ac48f5de57db",
+        "29b0fcb7-a18e-4156-bba7-af416e78c0c9",
+        "02d10030-35e9-4cb7-a50f-dfd2e2e6a010"
+      ],
+      "settings": {
+        "section_title": "<p>Shop by <strong>Categories<\/strong><\/p>"
+      }
+    },
+    "1fbc4fcf-d9e7-445a-82aa-337dd518caae": {
+      "type": "tab-switch",
+      "blocks": {
+        "0e6dd083-504e-4d4a-ae5e-dacdeb4712aa": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Best of Open Secret",
+            "collection": "best-sellers-christmas-combos",
+            "product_limit": 4
+          }
+        },
+        "61a54eb5-06c5-48a1-baa6-c9282b9e331d": {
+          "type": "tab-content",
+          "settings": {
+            "title": "New Arrivals",
+            "collection": "occasion-party-snacks",
+            "product_limit": 4
+          }
+        },
+        "b5a92b1d-6e92-4760-8501-2bb668f245c8": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Value Combos",
+            "collection": "best-seller-value-combos",
+            "product_limit": 4
+          }
+        },
+        "923f5ebb-8d0c-4258-8da3-fa2e1582891e": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Weight Management",
+            "collection": "best-seller-weight-management",
+            "product_limit": 4
+          }
+        },
+        "e6074c0a-f7db-4e2c-aa54-35669fdee3ae": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Chocolates",
+            "collection": "chocolates-mithai",
+            "product_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "0e6dd083-504e-4d4a-ae5e-dacdeb4712aa",
+        "61a54eb5-06c5-48a1-baa6-c9282b9e331d",
+        "b5a92b1d-6e92-4760-8501-2bb668f245c8",
+        "923f5ebb-8d0c-4258-8da3-fa2e1582891e",
+        "e6074c0a-f7db-4e2c-aa54-35669fdee3ae"
+      ],
+      "settings": {
+        "background": "#ffffff",
+        "heading": "<p>Shop Our <strong>Bestsellers<\/strong><\/p>",
+        "heading_size": "h1",
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false
+      }
+    },
+    "c531b35c-1136-4cb8-8385-b010f3bcf465": {
+      "type": "collection-tab-switch",
+      "blocks": {
+        "7c200ae8-f56b-49e1-8703-b9a8bc639d30": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Beat The Heat",
+            "collection": "occasion-winter-specials",
+            "product_limit": 4
+          }
+        },
+        "809d4b28-9239-45c7-b5c1-65e0d0e7c793": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Evening snacking",
+            "collection": "occassion-5pm-snacking",
+            "product_limit": 4
+          }
+        },
+        "172bfbb3-9377-49c9-b5ad-9bcb704e2b4d": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Breakfast",
+            "collection": "ocassion-breakfast",
+            "product_limit": 4
+          }
+        },
+        "fc17ab10-329c-45a6-8bcc-666ac4bc3be5": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Tea time snacks",
+            "collection": "occasion-tea-time-snacks",
+            "product_limit": 4
+          }
+        },
+        "b8776bb6-2f71-4d35-b0ed-c0b37b305974": {
+          "type": "tab-content",
+          "settings": {
+            "title": "Kids special",
+            "collection": "occasion-kids-special",
+            "product_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "7c200ae8-f56b-49e1-8703-b9a8bc639d30",
+        "809d4b28-9239-45c7-b5c1-65e0d0e7c793",
+        "172bfbb3-9377-49c9-b5ad-9bcb704e2b4d",
+        "fc17ab10-329c-45a6-8bcc-666ac4bc3be5",
+        "b8776bb6-2f71-4d35-b0ed-c0b37b305974"
+      ],
+      "settings": {
+        "background": "#ffffff",
+        "heading": "<p>Shop by <strong>Occasion<\/strong><\/p>",
+        "heading_size": "h1",
+        "padding_top": 12,
+        "padding_bottom": 52,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true
+      }
+    },
+    "632728bf-ed18-4429-9a6f-003fd86df55c": {
+      "type": "slideshow",
+      "blocks": {
+        "3072cd1e-fe74-459f-9dc3-ea2ed230c066": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/About_Open_Secret_Web_Banner_copy_3.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Comp_About_Open_Secret_Mob_Banner.webp",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/gourmet-gifts",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        },
+        "template--15969277968570__632728bf-ed18-4429-9a6f-003fd86df55c-1668450286584ad2a0-0": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/003.webp",
+            "image_mobile": "shopify:\/\/shop_images\/003_1.webp",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/value-combos",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "3072cd1e-fe74-459f-9dc3-ea2ed230c066",
+        "template--15969277968570__632728bf-ed18-4429-9a6f-003fd86df55c-1668450286584ad2a0-0"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 0,
+        "padding_bottom": 48
+      }
+    },
+    "1af11a76-655f-498b-bd11-197bd3b3ca0c": {
+      "type": "hp--brands-list",
+      "blocks": {
+        "1dae541b-84b1-4063-8e4d-428cf2f0839a": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4353c06a-e412-4071-a18d-bdad0ab974de.png",
+            "brand_link": "shopify:\/\/collections\/green-snack-co"
+          }
+        },
+        "3d90a180-3581-418a-869f-21a5d2028c0c": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OS-logo_1_1_dedf3b1a-02de-46e6-bef6-5b8350090174.png",
+            "brand_link": "shopify:\/\/collections\/open-secret"
+          }
+        },
+        "8d2153d1-e206-4349-9d49-9e565392cb52": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Plix_1_1.png",
+            "brand_link": "shopify:\/\/collections\/plix-the-plant-fix"
+          }
+        },
+        "6642b8f6-1f7d-4b0e-98a1-25b6b8500471": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Alpino_logo_resized.png",
+            "brand_link": "shopify:\/\/collections\/alpino"
+          }
+        },
+        "c1f9cfcb-63f3-4c32-8b56-1a02e0f596f6": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Resized_1621242934_egNyfs_Rage_Coffee_Logo_1_1.png",
+            "brand_link": "shopify:\/\/collections\/rage-coffee"
+          }
+        },
+        "f0f2a80a-b579-4b41-85e2-353e1218767c": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vahdam-Teas-logo.png",
+            "brand_link": "shopify:\/\/collections\/vahdam"
+          }
+        },
+        "f136aa12-8239-417e-ba7f-ce64a47d88f7": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Anveshan.png",
+            "brand_link": "shopify:\/\/collections\/anveshan"
+          }
+        },
+        "43cbea98-6087-4b41-92ee-683a26da5683": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4700bc-logo.png",
+            "brand_link": "shopify:\/\/collections\/4700bc"
+          }
+        },
+        "e08968b7-3552-4ea5-b5d3-5d8195773022": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/709f19bb-e04b-4d53-8c74-37cbe0d06d79.png",
+            "brand_link": "shopify:\/\/collections\/barosi"
+          }
+        },
+        "90def0ac-8ed0-45bf-add9-4159c60a117a": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Under_the_Mango_Tree_1_resized.webp",
+            "brand_link": "shopify:\/\/collections\/under-the-mango-tree"
+          }
+        },
+        "ea981ddf-8338-44c1-97f0-02dbbd41b3d2": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Yoga_bar.png",
+            "brand_link": "shopify:\/\/collections\/yoga-bar"
+          }
+        },
+        "c7264f76-299a-4411-b663-192e3a90ac73": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kesar_co_1.png",
+            "brand_link": "shopify:\/\/collections\/kesarco"
+          }
+        },
+        "50f71800-9e81-4790-b84b-60781e3e8a85": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Auric_Logo_-_Copy.png",
+            "brand_link": "shopify:\/\/collections\/auric"
+          }
+        },
+        "c2ed37ef-527c-45c6-b9f3-8bd5bef69558": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/keeros_logo_1000x1000_89000f7a-d8e7-44a5-b116-7e8bf554c404.png",
+            "brand_link": "shopify:\/\/collections\/keeros"
+          }
+        },
+        "588396f6-6d23-4d0b-962b-8ca2cdd3a520": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BLUE_TEA_NEW_LOGO-03_410x_9962df53-7eae-4133-93d7-ac5505494b09.png",
+            "brand_link": "shopify:\/\/collections\/blue-tea"
+          }
+        },
+        "b1d0b5e3-dcb7-4f2f-bbcb-814d419bd1c9": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BRB_logo_1.png",
+            "brand_link": "shopify:\/\/collections\/brb-popped-chips"
+          }
+        },
+        "64050ce4-27c7-4151-bb61-ee97a8649980": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/id_LKK_32r.png",
+            "brand_link": "shopify:\/\/collections\/kapiva"
+          }
+        },
+        "5d1988d9-cf43-4f0b-90c9-d9c9e9986af6": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healthy_mithai_co.png",
+            "brand_link": "shopify:\/\/collections\/healthy-mithai-co"
+          }
+        },
+        "1535d2d1-a245-4fdb-bf6e-1a7afcb7dbc4": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eatopia_logo.png",
+            "brand_link": "shopify:\/\/collections\/eatopia"
+          }
+        },
+        "8649923a-6f88-44c5-a9dd-313fbfbe835a": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BORN_REBORN_-_LOGO.png",
+            "brand_link": "shopify:\/\/collections\/born-reborn"
+          }
+        },
+        "10e7283b-740d-4bc6-bcff-76416c54406f": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Good_dot.png",
+            "brand_link": "shopify:\/\/collections\/good-dot"
+          }
+        },
+        "3def1bb5-0223-4f0f-a367-674b741a631a": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/miheso_logo.png",
+            "brand_link": "shopify:\/\/collections\/miheso"
+          }
+        },
+        "bea2916a-30f8-4984-b138-e16c92c387b4": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grainic.png",
+            "brand_link": "shopify:\/\/collections\/grainic"
+          }
+        },
+        "8e81b475-f3a0-4f3d-9944-db75a0b43dbc": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/new-logo.png",
+            "brand_link": "shopify:\/\/collections\/lil-goodness"
+          }
+        },
+        "c8a2dced-7446-4005-ba2a-8868c6345fdb": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vediko.png",
+            "brand_link": "shopify:\/\/collections\/vediko"
+          }
+        },
+        "cf6dcfad-46b9-4dc2-9df4-a5a4c5d85c00": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tru_nativ.png",
+            "brand_link": "shopify:\/\/collections\/trunativ"
+          }
+        },
+        "f4ec4a26-33d5-489a-85c5-5de00e834b8f": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/farmley.png",
+            "brand_link": "shopify:\/\/collections\/farmley"
+          }
+        },
+        "18296990-1169-43b0-8479-bbea06ea6d28": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Storia.png",
+            "brand_link": "shopify:\/\/collections\/storia-beverages"
+          }
+        },
+        "573a98bd-ce59-4d2e-b5c3-40269af6556c": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gourmet_Craft_Logo_-_Copy.png",
+            "brand_link": "shopify:\/\/collections\/gourmet-craft"
+          }
+        },
+        "105e3702-a204-4e84-bede-4d7818d35edf": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fix_Coffee_logo.png",
+            "brand_link": "shopify:\/\/collections\/fix-coffee"
+          }
+        },
+        "f5a14d34-bd1a-4279-81e9-6853f4b61453": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TOT_Logo.png",
+            "brand_link": "shopify:\/\/collections\/trick-or-treat"
+          }
+        },
+        "0f63d874-7dee-44dc-a8b9-cbe84e281312": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gold_boyo_logo_with_boldasyou.webp",
+            "brand_link": "shopify:\/\/collections\/boyo"
+          }
+        },
+        "9942afb6-fe6f-46d2-8660-9ba4645e3e88": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/br-logo.png",
+            "brand_link": "shopify:\/\/collections\/brotos"
+          }
+        },
+        "e53fefec-e5af-49cb-bb60-311165557cdd": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/625fde8169888153dc487f16_MY_FITNESS_LOGO.png",
+            "brand_link": "shopify:\/\/collections\/myfitness"
+          }
+        },
+        "84a91a3e-dd49-4ae5-9c43-0aad7712ae07": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jiwa_logo.png",
+            "brand_link": "shopify:\/\/collections\/jiwa"
+          }
+        },
+        "e2875eb6-a0cf-4bd1-9ad7-f06a1994669e": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GAW-Logo_1.png",
+            "brand_link": "shopify:\/\/collections\/get-a-whey"
+          }
+        },
+        "34eda037-c84c-41a8-9ec6-69fa0feabe9d": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image0.jpg",
+            "brand_link": "shopify:\/\/collections\/sattviko"
+          }
+        },
+        "bd4a0db2-6f4e-4ac8-b4f9-ae34a97a9589": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DA_logo.png",
+            "brand_link": "shopify:\/\/collections\/dough-adventures"
+          }
+        },
+        "1f7518ea-4074-40eb-b1e2-071c68965f80": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Prime_foods.png",
+            "brand_link": "shopify:\/\/collections\/prime-foods"
+          }
+        },
+        "0b0d4522-b657-4e42-9651-3877ef62eb4a": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "brand_link": "shopify:\/\/collections\/tagz"
+          }
+        },
+        "69ec705b-a3cb-4392-a1e7-7935388fa29d": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/epigamia_logo.png",
+            "brand_link": ""
+          }
+        },
+        "3a56fc03-045c-4554-84df-1cca6f30a728": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gladful.png",
+            "brand_link": "shopify:\/\/collections\/gladful"
+          }
+        },
+        "50a12e9c-ba1b-4c52-8193-15f09bd35c82": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Neuherbs.png",
+            "brand_link": "shopify:\/\/collections\/neuherbs"
+          }
+        },
+        "6d8079dc-a31a-4e14-b1c6-0c46731f3f76": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gramiyaa.png",
+            "brand_link": "shopify:\/\/collections\/gramiyaa"
+          }
+        },
+        "31b2e713-08cb-4288-b50f-b50995973e0a": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RAW_logo.png",
+            "brand_link": "shopify:\/\/collections\/raw-pressery"
+          }
+        },
+        "b1bdc56f-02d6-4a51-8ba3-e79c59692f66": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CB_logo_1.png",
+            "brand_link": "shopify:\/\/collections\/country-bean"
+          }
+        },
+        "be9a3d2a-5ca7-4c22-bd0e-493e35667bfc": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chaayos_Logo.png",
+            "brand_link": "shopify:\/\/collections\/chaayos"
+          }
+        },
+        "8780703a-96ba-41da-8425-0fa200aa6f18": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Truefarm.png",
+            "brand_link": "shopify:\/\/collections\/truefarm"
+          }
+        },
+        "4ff168c7-3636-438f-b6c8-4e3c5fc080d2": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wholly-bieng-logo12.png",
+            "brand_link": "shopify:\/\/collections\/wholly-being"
+          }
+        },
+        "d8176a71-136d-4f53-b4ff-d0d08f09aebb": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mojoco.png",
+            "brand_link": "shopify:\/\/collections\/mojoco"
+          }
+        }
+      },
+      "block_order": [
+        "1dae541b-84b1-4063-8e4d-428cf2f0839a",
+        "3d90a180-3581-418a-869f-21a5d2028c0c",
+        "8d2153d1-e206-4349-9d49-9e565392cb52",
+        "6642b8f6-1f7d-4b0e-98a1-25b6b8500471",
+        "c1f9cfcb-63f3-4c32-8b56-1a02e0f596f6",
+        "f0f2a80a-b579-4b41-85e2-353e1218767c",
+        "f136aa12-8239-417e-ba7f-ce64a47d88f7",
+        "43cbea98-6087-4b41-92ee-683a26da5683",
+        "e08968b7-3552-4ea5-b5d3-5d8195773022",
+        "90def0ac-8ed0-45bf-add9-4159c60a117a",
+        "ea981ddf-8338-44c1-97f0-02dbbd41b3d2",
+        "c7264f76-299a-4411-b663-192e3a90ac73",
+        "50f71800-9e81-4790-b84b-60781e3e8a85",
+        "c2ed37ef-527c-45c6-b9f3-8bd5bef69558",
+        "588396f6-6d23-4d0b-962b-8ca2cdd3a520",
+        "b1d0b5e3-dcb7-4f2f-bbcb-814d419bd1c9",
+        "64050ce4-27c7-4151-bb61-ee97a8649980",
+        "5d1988d9-cf43-4f0b-90c9-d9c9e9986af6",
+        "1535d2d1-a245-4fdb-bf6e-1a7afcb7dbc4",
+        "8649923a-6f88-44c5-a9dd-313fbfbe835a",
+        "10e7283b-740d-4bc6-bcff-76416c54406f",
+        "3def1bb5-0223-4f0f-a367-674b741a631a",
+        "bea2916a-30f8-4984-b138-e16c92c387b4",
+        "8e81b475-f3a0-4f3d-9944-db75a0b43dbc",
+        "c8a2dced-7446-4005-ba2a-8868c6345fdb",
+        "cf6dcfad-46b9-4dc2-9df4-a5a4c5d85c00",
+        "f4ec4a26-33d5-489a-85c5-5de00e834b8f",
+        "18296990-1169-43b0-8479-bbea06ea6d28",
+        "573a98bd-ce59-4d2e-b5c3-40269af6556c",
+        "105e3702-a204-4e84-bede-4d7818d35edf",
+        "f5a14d34-bd1a-4279-81e9-6853f4b61453",
+        "0f63d874-7dee-44dc-a8b9-cbe84e281312",
+        "9942afb6-fe6f-46d2-8660-9ba4645e3e88",
+        "e53fefec-e5af-49cb-bb60-311165557cdd",
+        "84a91a3e-dd49-4ae5-9c43-0aad7712ae07",
+        "e2875eb6-a0cf-4bd1-9ad7-f06a1994669e",
+        "34eda037-c84c-41a8-9ec6-69fa0feabe9d",
+        "bd4a0db2-6f4e-4ac8-b4f9-ae34a97a9589",
+        "1f7518ea-4074-40eb-b1e2-071c68965f80",
+        "0b0d4522-b657-4e42-9651-3877ef62eb4a",
+        "69ec705b-a3cb-4392-a1e7-7935388fa29d",
+        "3a56fc03-045c-4554-84df-1cca6f30a728",
+        "50a12e9c-ba1b-4c52-8193-15f09bd35c82",
+        "6d8079dc-a31a-4e14-b1c6-0c46731f3f76",
+        "31b2e713-08cb-4288-b50f-b50995973e0a",
+        "b1bdc56f-02d6-4a51-8ba3-e79c59692f66",
+        "be9a3d2a-5ca7-4c22-bd0e-493e35667bfc",
+        "8780703a-96ba-41da-8425-0fa200aa6f18",
+        "4ff168c7-3636-438f-b6c8-4e3c5fc080d2",
+        "d8176a71-136d-4f53-b4ff-d0d08f09aebb"
+      ],
+      "settings": {
+        "section_title": "<p>Shop by <strong>Brand<\/strong><\/p>",
+        "view_button": "View All",
+        "view_button_link": "shopify:\/\/pages\/brands-page"
+      }
+    },
+    "985de7fc-9284-4552-b02a-327af42bcddd": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15969277968570__985de7fc-9284-4552-b02a-327af42bcddd-1668450286584ad2a0-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Why-Buy-from-Us.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Comp_Why-Buy-From-Us-Mobile_1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/new-launches-1",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        },
+        "template--15969277968570__985de7fc-9284-4552-b02a-327af42bcddd-1668450286584ad2a0-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_54b1bc75-05b7-413f-a590-d8eab3630037.png",
+            "image_mobile": "shopify:\/\/shop_images\/banner_7cb74745-5441-4de2-84c9-a0bf715b34ff.png",
+            "image_overlay_opacity": 0,
+            "heading": "<p><\/p>",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15969277968570__985de7fc-9284-4552-b02a-327af42bcddd-1668450286584ad2a0-0",
+        "template--15969277968570__985de7fc-9284-4552-b02a-327af42bcddd-1668450286584ad2a0-1"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "0c50d804-8b73-4197-a5ff-85bae58353ca": {
+      "type": "customer-testimonials",
+      "blocks": {
+        "1d8d6c0c-b79f-4d57-893e-d7f5fa4ec95a": {
+          "type": "review",
+          "settings": {
+            "rating": "",
+            "review_caption": "<p>It Was Amazing<\/p>",
+            "review_content": "<p>\"Caramel Nuts are probably the best thing i've eaten since 2020! I put it at 'Sinner Level' tasty\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/Vijay-Shekhar-Sharma-Founder-of-PayTm.png",
+            "customer_name": "Vijay Shekhar Sharma",
+            "customer_caption": "Founder, Paytm"
+          }
+        },
+        "e3eda8ee-9b69-4852-bbac-d4c0eb1bf093": {
+          "type": "review",
+          "settings": {
+            "rating": "",
+            "review_caption": "<p>Filled with goodness<\/p>",
+            "review_content": "<p>\"There is so much goodness in every single Open secret pack that i cant any one product as our favorite. The Cookies, Caramel Sea Salt Almonds and the Choco Almond Spread are my family's all time go-to snacks.\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/Ria-Rele-Singh.png",
+            "customer_name": "Ria Rele Singh",
+            "customer_caption": "Mother"
+          }
+        },
+        "d5c5b0d9-f3f7-4208-aea0-92086e93e598": {
+          "type": "review",
+          "settings": {
+            "rating": "",
+            "review_caption": "<p>Best cookies & nuts<\/p>",
+            "review_content": "<p>\"Love the cookies & caramel nuts! Never seen anything like caramel nuts before.\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/payal-rajput.png",
+            "customer_name": "Payal Rajput",
+            "customer_caption": "Actor"
+          }
+        },
+        "f55096ce-6373-473b-8da7-352afe6fb041": {
+          "type": "review",
+          "settings": {
+            "rating": "",
+            "review_caption": "<p>Best cookies i have ever had<\/p>",
+            "review_content": "<p>\"I just wanted to tell you guys that these are the best damn cookies i have ever had!!! I love the cashew & almond ones. Guilt free & so so tasty.\"<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/aditi-mishra.png",
+            "customer_name": "Aditi Mishra",
+            "customer_caption": "Mother"
+          }
+        }
+      },
+      "block_order": [
+        "1d8d6c0c-b79f-4d57-893e-d7f5fa4ec95a",
+        "e3eda8ee-9b69-4852-bbac-d4c0eb1bf093",
+        "d5c5b0d9-f3f7-4208-aea0-92086e93e598",
+        "f55096ce-6373-473b-8da7-352afe6fb041"
+      ],
+      "settings": {
+        "heading": "<p>Verified, <strong>Honest Reviews.<\/strong><\/p>",
+        "quote": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"47.783\" height=\"37.421\" viewbox=\"0 0 47.783 37.421\">\n  <path id=\"Path_328459\" data-name=\"Path 328459\" d=\"M17.827-57.6a2.214,2.214,0,0,1,3.093.461,1.9,1.9,0,0,1-.066,2.962Q14.4-47.864,13.483-42.6q-.395,2.238,1.316,2.238a6.665,6.665,0,0,1,5.331,2.633A10.2,10.2,0,0,1,22.3-31.015a10.566,10.566,0,0,1-2.7,7.5,9.181,9.181,0,0,1-7.042,2.9,9.527,9.527,0,0,1-7.306-3.225,12.249,12.249,0,0,1-2.962-8.622Q2.294-47.337,17.827-57.6Zm27.775,0a2.214,2.214,0,0,1,3.093.461,1.9,1.9,0,0,1-.066,2.962q-6.45,6.318-7.372,11.584-.395,2.238,1.316,2.238a6.665,6.665,0,0,1,5.331,2.633,10.2,10.2,0,0,1,2.172,6.713,10.566,10.566,0,0,1-2.7,7.5,9.181,9.181,0,0,1-7.042,2.9,9.527,9.527,0,0,1-7.306-3.225,12.249,12.249,0,0,1-2.962-8.622Q30.069-47.337,45.6-57.6Z\" transform=\"translate(-2.294 58.037)\" fill=\"#e6d6e6\"><\/path>\n<\/svg>"
+      }
+    },
+    "cefeb580-1910-4a69-aaab-855923215961": {
+      "type": "hp--news-section",
+      "blocks": {
+        "9d09e4ba-8ce3-4b41-a68c-c3ae3fd1de0c": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_213366_68830944-97a3-4a18-affd-9aebed6c9b4b.png",
+            "category_link": "https:\/\/www.youtube.com\/watch?app=desktop&v=uKu9L-Ojl8Q"
+          }
+        },
+        "4eebec95-7114-4fb3-a190-1622519824a3": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VCC-logo.png",
+            "category_link": "https:\/\/www.vccircle.com\/matrix-partners-paytm-and-snapdeal-founders-back-healthy-snacks-startup-open-secret"
+          }
+        },
+        "2d89af0e-acae-40c0-8157-275509ae41ff": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_2.png",
+            "category_link": "https:\/\/inc42.com\/buzz\/matrix-partners-invests-in-open-secret-to-expand-fb-portfolio\/amp\/"
+          }
+        },
+        "27814ba3-788a-4d8f-b468-ef85d390ac57": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Your-Story.png",
+            "category_link": "https:\/\/yourstory.com\/herstory\/2020\/03\/iit-graduates-snack-startup-open-secret"
+          }
+        },
+        "f604451d-c634-48b8-8122-2932b461552c": {
+          "type": "news",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Times-of-India-logo.jpg",
+            "category_link": "https:\/\/timesofindia.indiatimes.com\/business\/startups\/people\/market-was-crowded-but-we-saw-a-big-opportunity-ahana-gautam-co-founder-open-secret\/articleshow\/72921705.cms"
+          }
+        }
+      },
+      "block_order": [
+        "9d09e4ba-8ce3-4b41-a68c-c3ae3fd1de0c",
+        "4eebec95-7114-4fb3-a190-1622519824a3",
+        "2d89af0e-acae-40c0-8157-275509ae41ff",
+        "27814ba3-788a-4d8f-b468-ef85d390ac57",
+        "f604451d-c634-48b8-8122-2932b461552c"
+      ],
+      "settings": {
+        "section_title": "<p>In the <strong>News<\/strong><\/p>"
+      }
+    },
+    "625797eb-e092-472b-b05f-48042e8dcba4": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15969277968570__625797eb-e092-472b-b05f-48042e8dcba4-1668450286584ad2a0-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/our_story-web_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/our_story-mobile_1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "button_label": "",
+            "link": "shopify:\/\/pages\/our-story",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15969277968570__625797eb-e092-472b-b05f-48042e8dcba4-1668450286584ad2a0-0"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 12,
+        "padding_bottom": 32
+      }
+    },
+    "149eb1f8-99d0-4d3d-81f0-242562a02c52": {
+      "type": "hp--other-platforms",
+      "disabled": true,
+      "blocks": {
+        "ed3e64c9-3116-4c3c-a251-69cad85e2837": {
+          "type": "platform",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flipkart-icon.jpg",
+            "platform_link": ""
+          }
+        },
+        "d923baaf-6fc1-4079-adbf-3511607f4669": {
+          "type": "platform",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Big-Basket.png",
+            "platform_link": ""
+          }
+        },
+        "8244364c-6be5-4022-aab4-b3a6bac84263": {
+          "type": "platform",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/amazon-png..png",
+            "platform_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ed3e64c9-3116-4c3c-a251-69cad85e2837",
+        "d923baaf-6fc1-4079-adbf-3511607f4669",
+        "8244364c-6be5-4022-aab4-b3a6bac84263"
+      ],
+      "settings": {
+        "section_title": "<p>You can also <strong>shop on<\/strong><\/p>"
+      }
+    }
+  },
+  "order": [
+    "1c09075d-d8df-4cea-a890-ab6691d1c975",
+    "2e5c83bb-759f-4d9c-9fc0-9861ca6e16be",
+    "1fbc4fcf-d9e7-445a-82aa-337dd518caae",
+    "c531b35c-1136-4cb8-8385-b010f3bcf465",
+    "632728bf-ed18-4429-9a6f-003fd86df55c",
+    "1af11a76-655f-498b-bd11-197bd3b3ca0c",
+    "985de7fc-9284-4552-b02a-327af42bcddd",
+    "0c50d804-8b73-4197-a5ff-85bae58353ca",
+    "cefeb580-1910-4a69-aaab-855923215961",
+    "625797eb-e092-472b-b05f-48042e8dcba4",
+    "149eb1f8-99d0-4d3d-81f0-242562a02c52"
+  ]
+}

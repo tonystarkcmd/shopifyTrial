@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165460479522332vv3": {
+      "type": "otp-login",
+      "settings": {
+        "image_enabled": true,
+        "image": "shopify:\/\/shop_images\/logo.jpg",
+        "btn_bg_color": "#121212",
+        "btn_text_color": "#ffffff",
+        "phone_enable": true,
+        "email_enable": true,
+        "whatsapp_enable": true,
+        "login_title": "<p>Login\/Signup with OTP<\/p>",
+        "login_sub_title": "",
+        "phone_placeholder": "Phone number",
+        "email_placeholder": "Email id",
+        "whatsapp_placeholder": "Whatsapp number",
+        "otp_title": "Enter OTP",
+        "sms_offer_enable": true,
+        "email_offer_enable": true,
+        "whatsapp_offer_enable": true,
+        "account_title": "Account Details",
+        "marketing_text": "keep me updated on new updates, exclusive offers, periodical blogs, and everything else on."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165460479522332vv3"
+  ]
+}
